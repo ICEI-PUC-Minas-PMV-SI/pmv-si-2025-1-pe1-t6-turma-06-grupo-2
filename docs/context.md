@@ -1,4 +1,4 @@
-**Projeto SurfBook**
+**Projeto FIT ADMIN**
 
 **Integrantes:**  
 - Anderson Henrique Costa Carvalho
