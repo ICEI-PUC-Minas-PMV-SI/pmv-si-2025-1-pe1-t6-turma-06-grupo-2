@@ -1,54 +1,87 @@
-# Introdução
+**Projeto SurfBook**
 
-Imagine que você deseja apresentar este projeto para investidores que deverão decidir se investem ou não no desenvolvimento da sua ferramenta.
+**Integrantes:**  
+- Anderson Henrique Costa Carvalho
+- Eduardo Pereira Oliveira
+- Eric Oliveira Vila Real
+- Diogo Garcia Silva de Paula
+- Maria Luisa da Silva Romancini
 
-A **Introdução** consiste das etapas: *Contextualização -- Definição do problema -- Definição dos Objetivos -- Justificativa*, e tem como função situar o seu trabalho dentro de um contexto de mercado e mostrar a importância da sua proposta para resolver a dor de um usuário.
+# Problema
 
-A Contextualização deve situar sem projeto em um determinado contexto de mercado, a fim de fornecer informações adicionais que possam ajudar a entender melhor o assunto que você irá abordar. Serve também para definir a relevância do seu assunto, uma vez que mostra o tamanho do mercado em que se está inserido. Ela pode envolver a análise de vários aspectos, como o ambiente histórico, cultural, político e social em que o problema a ser atacado surgiu.
+A gestão manual dos cadastros de alunos em academias gera uma série de desafios, como desorganização, perda de tempo, dificuldades no acesso às informações e riscos de erros humanos. Esses problemas impactam diretamente a eficiência operacional e a qualidade do atendimento ao cliente, tornando necessária a implementação de uma solução tecnológica que otimize esses processos
 
-Escreva de 2 a 3 parágrafos para contetualizar o seu projeto.
 
-## Problema
+# Objetivos
 
-Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, **não** é a hora de comentar sobre a solução/aplicação.
+## Objetivo Geral
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
+Desenvolver um sistema de cadastro online para alunos de uma academia, com o intuito de modernizar e simplificar a gestão de informações, garantindo maior eficiência, segurança e acessibilidade.
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
+## Objetivos Específicos
 
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
-## Objetivos
+Coletar dados dos alunos: Criar um formulário digital para registro de informações pessoais, frequências, treinos etc.
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+- Coletar dados dos alunos: Criar um formulário digital para registro de informações pessoais, treinos, frequências.
+- Excluir registros: Permitir a remoção de cadastros de alunos que não frequentam mais a academia.
+- Organização e busca rápida: Implementar funcionalidades de filtro e busca para facilitar o acesso às informações.
+- Editar e atualizar dados: Oferecer a possibilidade de atualizar informações dos alunos de forma ágil e intuitiva.
+- Acessibilidade: garantir que o sistema funcione de forma responsivo para aparelhos celulares e computadores.
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+# Justificativa
 
-## Justificativa
+O tema do sistema de gestão para academias foi escolhido devido à crescente
+demanda por soluções tecnológicas no setor fitness, aliada à necessidade de modernização e eficiência na administração de estabelecimentos desse segmento.
+Atualmente, muitas academias ainda dependem de métodos manuais para gerenciar cadastros de alunos, o que resulta em processos lentos, propensos a erros e pouco escaláveis. 
+A implementação de um sistema online visa suprir essas lacunas, oferecendo uma ferramenta que centraliza e organiza as informações de forma segura e acessível.
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
 
-Lembre-se de pesquisar e utilizar números que justifiquem por que é importante que tal problema seja resolvido ou que mostrem o impacto do problema na vida das pessoas.
+# Público Alvo
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+O público-alvo do sistema inclui:
+Gestores e administradores de academias: Profissionais responsáveis pela administração e organização dos estabelecimentos.
+Recepcionistas e funcionários de atendimento: Pessoas que necessitam acessar e atualizar informações dos alunos diariamente.
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
 
-## Público-Alvo
+## Persona
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
+Nome: Carlos Souza
+Idade: 45 anos
+Profissão: Proprietário e gestor de uma academia de médio porte
+Experiência: 13 anos no setor fitness
+Desafios: Antes do sistema, Carlos enfrentava dificuldades para organizar os cadastros dos alunos, perdia tempo com anotações manuais e tinha dificuldades para acessar informações rapidamente.
+Objetivo: Melhorar a gestão da academia com um sistema simples e eficiente para cadastrar, buscar e atualizar informações dos alunos sem complicação.
+Solução: Com o sistema, Carlos agora pode gerenciar os cadastros de forma rápida e organizada, garantindo mais eficiência no seu dia a dia e melhorando a experiência dos alunos.
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
 
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+# **Requisitos funcionais e não funcionais**
+
+## Requisitos funcionais
+
+| ID | Descrição | Prioridade |
+| :---- | :---- | :---- |
+| RF-01 | O sistema deve permitir o cadastro de novos alunos, incluindo nome, telefone e e-mail. | ALTA |
+| RF-02 | O sistema deve permitir a exclusão de cadastros de alunos que não frequentam mais a academia. | ALTA |
+| RF-03 | O sistema deve permitir a edição de informações dos alunos, como telefone, nome, e-mail. | ALTA |
+| RF-04 | O sistema deve permitir a busca de alunos por nome, telefone ou e-mail. | ALTA |
+| RF-05 | O sistema deve exibir uma lista de todos os alunos cadastrados. | ALTA |
+| RF-06 | O sistema deve permitir a filtragem de alunos por plano (mensal, trimestral, anual). | ALTA |
+| RF-07 | O sistema deve permitir o login de usuários (gestores e recepcionistas) com senha. | ALTA |
+| RF-08 | O sistema deve permitir a alteração de senha dos usuários (gestores e recepcionistas). | MÈDIA |
+| RF-09 | O sistema deve exibir uma mensagem de confirmação ao cadastrar, editar ou excluir um aluno. | BAIXA |
+| RF-10 | O sistema deve validar campos obrigatórios durante o cadastro (ex.: nome e telefone). | ALTA |
+| RF-11 | O sistema deve permitir a exportação da lista de alunos para um arquivo CSV. | BAIXA |
+| RF-12 | O sistema deve permitir a impressão da lista de alunos. | BAIXA |
+
+## Requisitos Não Funcionais
+
+| ID | DESCRIÇÃO | PRIORIDADE |
+| :---- | :---- | :---- |
+| RNF-01 | O sistema deve ser responsivo, funcionando corretamente em dispositivos móveis e desktops. | ALTA |
+| RNF-02 | O sistema deve ser compatível com os principais navegadores (Chrome, Firefox, Edge e Safari). | MALTA |
+| RNF-03 | O sistema deve ser publicado em um ambiente público, como GitHub Pages ou um servidor web. | ALTA |
+| RNF-04 | O sistema deve ter um bom nível de contraste entre texto e fundo, garantindo acessibilidade.  | MÉDIA |
+| RNF-05 | O sistema deve carregar em menos de 3 segundos, mesmo com até 500 cadastros. | MÉDIA |
+| RNF-06 | O sistema deve armazenar os dados dos alunos no LocalStorage do navegador.| ALTA |
+| RNF-07 | O sistema deve garantir a persistência dos dados no navegador, mesmo após o fechamento da aba. | ALTA |
