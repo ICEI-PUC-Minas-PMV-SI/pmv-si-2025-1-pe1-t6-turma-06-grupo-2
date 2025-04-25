@@ -4,7 +4,7 @@ Este documento tem como objetivo passar as informações básicas sobre como ser
 
 O layout padrão do site foi construído com as linguagens de marcação HTML e CSS.
 
--Cores: RGB: #191919, #FFFFFF #DB0B00
+- Cores: RGB: #191919, #FFFFFF, #DB0B00, #B00000, #000000
 ## Cores
 
 ![AdobeColor-PUC](https://github.com/user-attachments/assets/464c4803-0bea-469e-acd5-a7a57969f50b)
