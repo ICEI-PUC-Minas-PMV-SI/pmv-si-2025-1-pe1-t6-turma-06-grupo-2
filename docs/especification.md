@@ -1,35 +1,30 @@
 # Especificações do Projeto
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
 
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto.
-
-Caso deseje atribuir uma imagem a sua persona, utilize o site https://thispersondoesnotexist.com/
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
-
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
-
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+Nome: Carlos Souza
+Idade: 45 anos
+Profissão: Proprietário e gestor de uma academia de médio porte
+Experiência: 13 anos no setor fitness
+Desafios: Antes do sistema, Carlos enfrentava dificuldades para organizar os
+cadastros dos alunos, perdia tempo com anotações manuais e tinha dificuldades
+para acessar informações rapidamente.
+Objetivo: Melhorar a gestão da academia com um sistema simples e eficiente para
+cadastrar, buscar e atualizar informações dos alunos sem complicação.
+Solução: Com o sistema, Carlos agora pode gerenciar os cadastros de forma rápida
+e organizada, garantindo mais eficiência no seu dia a dia e melhorando a
+experiência dos alunos.
 
 ## Histórias de Usuários
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
+EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+|Gestor da academia | Cadastrar novos alunos de forma rápida e facíl          | evitar a perda de tempo com processos manuais e reduzir erros de cadastro.            |
+|Recepcionista      | Buscar informações de alunos em segundos                | Atender os alunos de forma ágil e eficiente durante os horários de pico.|
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
@@ -46,18 +41,33 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade | 
-|------|-----------------------------------------|----| 
-|RF-001| A aplicação deve permitir que o usuário gerencie suas tarefas | ALTA |  
-|RF-002| A aplicação deve permitir a emissão de um relatório de tarefas realizadas no mês   | MÉDIA | 
+ID | Descrição | Prioridade |
+| :---- | :---- | :---- |
+| RF-01 | O sistema deve permitir o cadastro de novos alunos, incluindo nome, telefone e e-mail. | ALTA |
+| RF-02 | O sistema deve permitir a exclusão de cadastros de alunos que não frequentam mais a academia. | ALTA |
+| RF-03 | O sistema deve permitir a edição de informações dos alunos, como telefone, nome, e-mail. | ALTA |
+| RF-04 | O sistema deve permitir a busca de alunos por nome, telefone ou e-mail. | ALTA |
+| RF-05 | O sistema deve exibir uma lista de todos os alunos cadastrados. | ALTA |
+| RF-06 | O sistema deve permitir a filtragem de alunos por plano (mensal, trimestral, anual). | ALTA |
+| RF-07 | O sistema deve permitir o login de usuários (gestores e recepcionistas) com senha. | ALTA |
+| RF-08 | O sistema deve permitir a alteração de senha dos usuários (gestores e recepcionistas). | MÈDIA |
+| RF-09 | O sistema deve exibir uma mensagem de confirmação ao cadastrar, editar ou excluir um aluno. | BAIXA |
+| RF-10 | O sistema deve validar campos obrigatórios durante o cadastro (ex.: nome e telefone). | ALTA |
+| RF-11 | O sistema deve permitir a exportação da lista de alunos para um arquivo CSV. | BAIXA |
+| RF-12 | O sistema deve permitir a impressão da lista de alunos. | BAIXA |
 
 
 ### Requisitos não Funcionais
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| A aplicação deve ser responsiva | MÉDIA | 
-|RNF-002| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+| ID | DESCRIÇÃO | PRIORIDADE |
+| :---- | :---- | :---- |
+| RNF-01 | O sistema deve ser responsivo, funcionando corretamente em dispositivos móveis e desktops. | ALTA |
+| RNF-02 | O sistema deve ser compatível com os principais navegadores (Chrome, Firefox, Edge e Safari). | MALTA |
+| RNF-03 | O sistema deve ser publicado em um ambiente público, como GitHub Pages ou um servidor web. | ALTA |
+| RNF-04 | O sistema deve ter um bom nível de contraste entre texto e fundo, garantindo acessibilidade.  | MÉDIA |
+| RNF-05 | O sistema deve carregar em menos de 3 segundos, mesmo com até 500 cadastros. | MÉDIA |
+| RNF-06 | O sistema deve armazenar os dados dos alunos no LocalStorage do navegador.| ALTA |
+| RNF-07 | O sistema deve garantir a persistência dos dados no navegador, mesmo após o fechamento da aba. | ALTA |
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
