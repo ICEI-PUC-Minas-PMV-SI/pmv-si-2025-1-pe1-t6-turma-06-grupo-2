@@ -1,14 +1,10 @@
-# Template padrão do site
+# Template padrão Fit Admin
 
-Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
+Este documento tem como objetivo passar as informações básicas sobre como será desenvolvido o sistema Fit Admin. Apresentando o Template padrão de aplicação, paleta de cores, Layout Padrão, Tela de validação de código, Tipografia, Iconografia e Logo.
 
-Explique as guias de estilo utilizadas no seu projeto.
+O layout padrão do site foi construído com as linguagens de marcação HTML e CSS.
 
-## Design
-
-Detalhe os layouts que serão utilizados. Apresente onde será colocado o logo do sistema. Defina os menus padrões, entre outras coisas.
-
-
+-Cores: RGB: #191919, #FFFFFF #DB0B00
 ## Cores
 
 ![AdobeColor-PUC](https://github.com/user-attachments/assets/464c4803-0bea-469e-acd5-a7a57969f50b)
