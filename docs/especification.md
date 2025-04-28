@@ -55,12 +55,13 @@ ID | Descrição | Prioridade |
 | ID | DESCRIÇÃO | PRIORIDADE |
 | :---- | :---- | :---- |
 | RNF-01 | O sistema deve ser responsivo, funcionando corretamente em dispositivos móveis e desktops. | ALTA |
-| RNF-02 | O sistema deve ser compatível com os principais navegadores (Chrome, Firefox, Edge e Safari). | MALTA |
+| RNF-02 | O sistema deve ser compatível com os principais navegadores (Chrome, Firefox, Edge e Safari). | ALTA |
 | RNF-03 | O sistema deve ser publicado em um ambiente público, como GitHub Pages ou um servidor web. | ALTA |
 | RNF-04 | O sistema deve ter um bom nível de contraste entre texto e fundo, garantindo acessibilidade.  | MÉDIA |
 | RNF-05 | O sistema deve carregar em menos de 3 segundos, mesmo com até 500 cadastros. | MÉDIA |
 | RNF-06 | O sistema deve armazenar os dados dos alunos no LocalStorage do navegador.| ALTA |
 | RNF-07 | O sistema deve garantir a persistência dos dados no navegador, mesmo após o fechamento da aba. | ALTA |
+| RNF-08 | O sistema deve exibir mensagens claras de confirmação ou erro após ações do usuário. | Média |
 
 
 ## Restrições
