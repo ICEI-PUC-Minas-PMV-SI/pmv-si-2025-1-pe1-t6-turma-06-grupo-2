@@ -1,4 +1,4 @@
-**Projeto FIT ADMIN**
+**Projeto FIT CONTROL**
 
 **Integrantes:**  
 - Anderson Henrique Costa Carvalho
