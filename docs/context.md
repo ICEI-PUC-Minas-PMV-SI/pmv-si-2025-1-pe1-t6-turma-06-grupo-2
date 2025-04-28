@@ -85,3 +85,4 @@ Solução: Com o sistema, Carlos agora pode gerenciar os cadastros de forma ráp
 | RNF-05 | O sistema deve carregar em menos de 3 segundos, mesmo com até 500 cadastros. | MÉDIA |
 | RNF-06 | O sistema deve armazenar os dados dos alunos no LocalStorage do navegador.| ALTA |
 | RNF-07 | O sistema deve garantir a persistência dos dados no navegador, mesmo após o fechamento da aba. | ALTA |
+| RNF-08| O sistema deve  exibir mensagens claras de confirmação ou erro após ações do usuário. |   MÉDIA |
