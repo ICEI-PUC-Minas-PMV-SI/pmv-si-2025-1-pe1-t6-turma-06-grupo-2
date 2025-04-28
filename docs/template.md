@@ -9,8 +9,6 @@ O layout padrão do site foi construído com as linguagens de marcação HTML e 
 
 ![image](https://github.com/user-attachments/assets/20d0038d-a6ce-43f6-a06e-be05077b83e2)
 
-![AdobeColor-PUC](https://github.com/user-attachments/assets/464c4803-0bea-469e-acd5-a7a57969f50b)
-
 
 ## Tipografia
 
