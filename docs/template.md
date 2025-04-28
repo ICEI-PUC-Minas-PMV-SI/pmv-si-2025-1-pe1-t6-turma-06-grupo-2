@@ -9,6 +9,13 @@ O layout padrão do site foi construído com as linguagens de marcação HTML e 
 
 ![image](https://github.com/user-attachments/assets/20d0038d-a6ce-43f6-a06e-be05077b83e2)
 
+## Layout padrão da tela inicial 
+
+## Tela principal
+
+## Tela de cadrastro
+
+## Tela 
 
 ## Tipografia
 
