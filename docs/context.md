@@ -79,7 +79,7 @@ Solução: Com o sistema, Carlos agora pode gerenciar os cadastros de forma ráp
 | ID | DESCRIÇÃO | PRIORIDADE |
 | :---- | :---- | :---- |
 | RNF-01 | O sistema deve ser responsivo, funcionando corretamente em dispositivos móveis e desktops. | ALTA |
-| RNF-02 | O sistema deve ser compatível com os principais navegadores (Chrome, Firefox, Edge e Safari). | MALTA |
+| RNF-02 | O sistema deve ser compatível com os principais navegadores (Chrome, Firefox, Edge e Safari). | ALTA |
 | RNF-03 | O sistema deve ser publicado em um ambiente público, como GitHub Pages ou um servidor web. | ALTA |
 | RNF-04 | O sistema deve ter um bom nível de contraste entre texto e fundo, garantindo acessibilidade.  | MÉDIA |
 | RNF-05 | O sistema deve carregar em menos de 3 segundos, mesmo com até 500 cadastros. | MÉDIA |
