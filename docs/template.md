@@ -11,9 +11,9 @@ O layout padrão do site foi construído com as linguagens de marcação HTML e 
 
 ## Layout padrão da página de cadastro/login.
 
- Na tela de cadastro, o usuário terá de usar um email, senha, nome pessoal e o nome da empresa.
+ Na página de cadastro, o usuário terá de usar um email, senha, nome pessoal e o nome da empresa.
  
- Na tela de login o usuário colocara sua informações pessoais (email e senha).
+ Na página de login o usuário colocara sua informações pessoais (email e senha).
 
 ## página principal (cadastro/edição de alunos).
 
