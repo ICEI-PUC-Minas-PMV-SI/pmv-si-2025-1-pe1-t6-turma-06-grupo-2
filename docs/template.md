@@ -1,4 +1,4 @@
-# Template padrão Fit Admin
+# Template padrão Fit control
 
 Este documento tem como objetivo passar as informações básicas sobre como será desenvolvido o sistema Fit Admin. Apresentando o Template padrão de aplicação, paleta de cores, Layout Padrão, Tela de validação de código, Tipografia, Iconografia e Logo.
 
