@@ -47,12 +47,6 @@ O layout padrão do site foi construído com as linguagens de marcação HTML e 
 
 Os ícones utilizados foram retirados da biblioteca Phosphor Icons.
 
-
-Defina os ícones que serão utilizados e suas respectivas funções.
-
-Apresente os estilos CSS criados para cada um dos elementos apresentados.
-Outras seções podem ser adicionadas neste documento para apresentar padrões de componentes, de menus, etc.
-
 ## Logo
 ![image](https://github.com/user-attachments/assets/234502ed-8f68-4893-9c7a-6999840975c1)
 
