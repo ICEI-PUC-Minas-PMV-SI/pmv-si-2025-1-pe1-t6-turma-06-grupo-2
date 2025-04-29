@@ -23,7 +23,7 @@ Apresente as fontes que serão utilizadas e sua função no site. As principais 
 
 
 ## Iconografia
-https://www.figma.com/file/9mmcXWcDRgnxJJL0iJ1PgJ?node-id=110:345&p=f&t=7KQdS9NPHi2pxtKI-0&locale=en&type=design
+
 
 Defina os ícones que serão utilizados e suas respectivas funções.
 
