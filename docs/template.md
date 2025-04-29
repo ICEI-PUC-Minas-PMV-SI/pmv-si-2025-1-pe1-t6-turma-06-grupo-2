@@ -11,16 +11,24 @@ O layout padrão do site foi construído com as linguagens de marcação HTML e 
 
 ## Layout padrão da página de cadastro/login.
 
+![image](https://github.com/user-attachments/assets/b00bb2cc-750a-4aad-9475-92c12a0c504d)
+
  Na página de cadastro, o usuário terá de usar um email, senha, nome pessoal e o nome da empresa.
  
  Na página de login o usuário colocara sua informações pessoais (email e senha).
 
 ## página principal (cadastro/edição de alunos).
 
+![image (2)](https://github.com/user-attachments/assets/46e14d87-93fa-4eda-a60a-58e3f703aff7)
+
  Nessa página o usuário colocara as informações pessoais do aluno, (nome, matricula, plano, data de nascimento, peso, altura e telefone).
 
 
 ## página de alunos
+
+![image (3)](https://github.com/user-attachments/assets/69d1f400-c78f-4c4c-9340-e2573dcd0eed)
+
+
  Nessa página, o usuário consegue ver todos seus alunos cadastrados no sistema.
 
 ## Tipografia
@@ -29,6 +37,10 @@ O layout padrão do site foi construído com as linguagens de marcação HTML e 
  Estas são as variações tipográficas da fonte Inter que serão utilizadas no design do sistema, garantindo legibilidade, consistência, segurança e modernidade.
 
 ## Iconografia
+
+![image (5)](https://github.com/user-attachments/assets/28ca7843-dc3f-4f3e-951e-7f7440ebbf94)
+
+![image (6)](https://github.com/user-attachments/assets/17bca9e3-77b0-4c58-8e4f-57526fe97774)
 
 
 Defina os ícones que serão utilizados e suas respectivas funções.
