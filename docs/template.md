@@ -9,7 +9,7 @@ O layout padrão do site foi construído com as linguagens de marcação HTML e 
 
 ![image](https://github.com/user-attachments/assets/20d0038d-a6ce-43f6-a06e-be05077b83e2)
 
-## Layout padrão da tela de cadastro/login.
+## Layout padrão da página de cadastro/login.
 
  Na tela de cadastro, o usuário terá de usar um email, senha, nome pessoal e o nome da empresa.
  
