@@ -1,6 +1,6 @@
-# Template padrão Fit control
+# Template padrão Fit Control
 
-Este documento tem como objetivo passar as informações básicas sobre como será desenvolvido o sistema Fit Admin. Apresentando o Template padrão de aplicação, paleta de cores, Layout Padrão, Tela de validação de código, Tipografia, Iconografia e Logo.
+Este documento tem como objetivo passar as informações básicas sobre como será desenvolvido o sistema Fit Control. Apresentando o Template padrão de aplicação, paleta de cores, Layout Padrão, Tela de validação de código, Tipografia, Iconografia e Logo.
 
 O layout padrão do site foi construído com as linguagens de marcação HTML e CSS.
 
@@ -9,13 +9,13 @@ O layout padrão do site foi construído com as linguagens de marcação HTML e 
 
 ![image](https://github.com/user-attachments/assets/20d0038d-a6ce-43f6-a06e-be05077b83e2)
 
-## Layout padrão da tela de login
+## Layout padrão da tela de criaçao da conta 
+
+Essa tela, o usuario tera de usar um email, senha, nome pessoal e o nome da empresa.
 
 ## Tela principal
 
 ## Telas de cadrastros/ediçao
-
-## Tela 
 
 ## Tipografia
 
