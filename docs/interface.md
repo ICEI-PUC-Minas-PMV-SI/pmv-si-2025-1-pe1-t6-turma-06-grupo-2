@@ -7,32 +7,66 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 ## User Flow
 
-![Exemplo de UserFlow](img/userflow.jpg)
-
-Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
-
-> **Links Úteis**:
-> - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 User Flow Tools & Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
+https://www.figma.com/proto/9mmcXWcDRgnxJJL0iJ1PgJ/FitControl?node-id=2101-1561&p=f&t=ED59ChvQc3iHBMO9-1&scaling=scale-down&content-scaling=fixed&page-id=610%3A1316&starting-point-node-id=2101%3A2131&show-proto-sidebar=1
 
 
-## Wireframes
+### Wireframes
 
-São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface e é fundamental sempre relacionar cada wireframe com o(s) requisito(s) que ele atende.
+Nesta etapa, foi feita a construção das telas que o sistema irá trabalhar, tratando todas as questões dos requisitos informado.
+### Criar Conta
+![Criar conta](https://github.com/user-attachments/assets/8e4d8488-7c7c-45bb-ac28-ed951832f147)
 
-### Exemplo
+**Relacionados:** RF01
+**Descrição:** Funcionalidade de cadastro.
 
-A tela inicial apresenta um menu lateral com as principais seções do portal, enquanto a navigation bar, ao topo, apresenta informações de envio de imagens ou navegação pela galeria de fotos. A área central apresenta a galeria de fotos na forma de uma grade. Nesta tela, são apresentados os seguintes requisitos
+### Login
+![Entrar](https://github.com/user-attachments/assets/6dd082c4-6be8-4b41-be7b-7c3199731016)
 
-![Exemplo de Wireframe](img/wireframe-example.png)
+**Relacionados:** RF07
+**Descrição:** Funcionalidade de login.
 
- 
-> **Links Úteis**:
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [Axure](https://www.axure.com/edu) (Licença Educacional)
-> - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional)
+### Lista de Alunos
+![Lista de Alunos](https://github.com/user-attachments/assets/f5871ce4-87b1-45ff-84c8-95f6b481287f)
+**Relacionados:** RF02,RF06,RF05,RF11
+**Descrição:** Funcionalidade de exibir a lista de todos alunos cadastrados,possibilitar a exclusão de alunos, filtrar alunos por plano e exportação da lista de alunos para um arquivo CSV..
+
+### Editar e cadastrar alunos
+![Cadastro de aluno](https://github.com/user-attachments/assets/96260469-8e2c-4c21-a7b1-0ccdf430de8e)
+**Relacionados:** RF01,RF03
+**Descrição:** Funcionalidade de cadastrar novos alunos e editar informações de alunos já existentes.
+
+### Cadastro de funcionários
+![Cadastro de funcionário](https://github.com/user-attachments/assets/dd2fd3eb-53f9-4504-998d-b08736e5c187)
+**Descrição:** Funcionalidade de cadastrar os funcionários da academia.
+
+### Lista de usuários 
+![funcionários](https://github.com/user-attachments/assets/f26e0405-e8b0-4b85-808d-c0196dd830b9)
+**Relacionados:** RF04,RF05
+**Descrição:** Funcionalidade de exibir todos os usuários e funcionários e busca-los por email e nome.
+
+### Alteração de senha
+![Alterar senha](https://github.com/user-attachments/assets/4f1b5645-ff24-4ca9-bc15-f75f7caff07a)
+**Relacionados:** RF08
+**Descrição:** Funcionalidade de editar as senhas dos usuários.
+
+### Barra de navegação
+![nav](https://github.com/user-attachments/assets/cb389875-2648-433d-af43-adb576056c40)
+
+### Landing page
+![Landing page (1)](https://github.com/user-attachments/assets/640ea904-7572-4edf-a4e0-30efe848faaf)
+
+### Confirmação
+![Component 1](https://github.com/user-attachments/assets/3fdbe2b2-ea50-4210-932f-20e3948fe96a)
+**Relacionados:** RF09
+**Descrição:** Funcionalidade de mensagem de confirmação para excluir um aluno.
+
+
+
+
+
+
+
+
+
+
+
