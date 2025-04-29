@@ -24,6 +24,7 @@ O layout padrão do site foi construído com as linguagens de marcação HTML e 
  Nessa página, o usuário consegue ver todos seus alunos cadastrados no sistema.
 
 ## Tipografia
+![image](https://github.com/user-attachments/assets/53a8684e-4ee5-43d3-91ac-9b929ddc02ad)
 
  Estas são as variações tipográficas da fonte Inter que serão utilizadas no design do sistema, garantindo legibilidade, consistência, segurança e modernidade.
 
