@@ -9,13 +9,19 @@ O layout padrão do site foi construído com as linguagens de marcação HTML e 
 
 ![image](https://github.com/user-attachments/assets/20d0038d-a6ce-43f6-a06e-be05077b83e2)
 
-## Layout padrão da tela de criaçao da conta 
+## Layout padrão da tela de cadastro/login.
 
-Essa tela, o usuario tera de usar um email, senha, nome pessoal e o nome da empresa.
+ Na tela de cadastro, o usuário terá de usar um email, senha, nome pessoal e o nome da empresa.
+ 
+ Na tela de login o usuário colocara sua informações pessoais (email e senha).
 
-## Tela principal
+## página principal (cadastro/edição de alunos).
 
-## Telas de cadrastros/ediçao
+ Nessa página o usuário colocara as informações pessoais do aluno, (nome, matricula, plano, data de nascimento, peso, altura e telefone).
+
+
+## página de alunos
+ Nessa página, o usuário consegue ver todos seus alunos cadastrados no sistema.
 
 ## Tipografia
 
