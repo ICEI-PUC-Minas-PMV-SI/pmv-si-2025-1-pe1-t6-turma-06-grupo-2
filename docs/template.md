@@ -25,8 +25,7 @@ O layout padrão do site foi construído com as linguagens de marcação HTML e 
 
 ## Tipografia
 
-Apresente as fontes que serão utilizadas e sua função no site. As principais funções são: Título de página, Título de Seção, Rótulos de componentes e Corpo de Texto.
-
+ Estas são as variações tipográficas da fonte Inter que serão utilizadas no design do sistema, garantindo legibilidade, consistência, segurança e modernidade.
 
 ## Iconografia
 
