@@ -23,7 +23,7 @@ O layout padrão do site foi construído com as linguagens de marcação HTML e 
 
 ![image (3)](https://github.com/user-attachments/assets/69d1f400-c78f-4c4c-9340-e2573dcd0eed)
 
- Nessa página o usuário colocara as informações pessoais do aluno, (nome, matricula, plano, data de nascimento, peso, altura e telefone).
+ Nessa página o usuário colocara as informações pessoais do aluno, (nome, matricula, plano, data de vencimento, peso, altura e telefone).
 
 
 ## página de alunos
