@@ -1,0 +1,169 @@
+body {
+  background: var(--color-surface);
+  color: var(--color-black);
+}
+
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: 0 2rem;
+  height: 64px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.menu-btn, .logout-btn {
+  background: none;
+  border: none;
+  color: var(--color-white);
+  font-size: 2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.dashboard-title {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.dashboard-main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.dashboard-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+.dashboard-actions h2 {
+  margin: 0 1.5rem 0 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.btn-outline {
+  background: var(--color-white);
+  border: 1.5px solid var(--color-primary);
+  color: var(--color-primary);
+  border-radius: 6px;
+  padding: 0.5rem 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.btn-outline:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+.btn-white {
+  background: var(--color-white);
+  color: var(--color-primary);
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 2.2rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  margin-left: auto;
+}
+.search-input {
+  width: 100%;
+  max-width: 500px;
+  padding: 0.7rem 1rem;
+  border-radius: 6px;
+  border: 1.5px solid var(--color-secondary);
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.students-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+.student-card {
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+  box-shadow: 0 2px 12px rgba(25,25,25,0.06);
+  min-width: 0;
+}
+.student-photo {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: var(--color-white);
+}
+.student-info {
+  flex: 1;
+  min-width: 0;
+}
+.student-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 0.2rem;
+}
+.student-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.student-actions {
+  display: flex;
+  gap: 0.3rem;
+}
+.student-actions .material-icons {
+  font-size: 1.2rem;
+  cursor: pointer;
+  opacity: 0.85;
+  transition: color 0.2s, opacity 0.2s;
+}
+.student-actions .edit:hover {
+  color: var(--color-yellow-secondary);
+}
+.student-actions .delete:hover {
+  color: var(--color-yellow-primary);
+}
+.student-plan {
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+.student-details {
+  display: flex;
+  gap: 1.2rem;
+  font-size: 0.98rem;
+  margin-top: 0.2rem;
+}
+.student-details span b {
+  font-weight: 700;
+}
+
+@media (max-width: 700px) {
+  .dashboard-header {
+    padding: 0 0.7rem;
+  }
+  .dashboard-main {
+    margin: 1rem auto;
+    padding: 0 0.2rem;
+  }
+  .students-grid {
+    gap: 1rem;
+  }
+  .student-card {
+    padding: 0.7rem;
+  }
+  .dashboard-title {
+    font-size: 1.2rem;
+  }
+} 

@@ -7,6 +7,8 @@
   --color-error: #E83F5B;
   --color-white: #FFFFFF;
   --color-black: #000000;
+	--color-yellow-secondary: #FFD600;
+	--color-yellow-primary: #FFF176;
   --font-family-base: 'Inter', Arial, Helvetica, sans-serif;
 }
 
