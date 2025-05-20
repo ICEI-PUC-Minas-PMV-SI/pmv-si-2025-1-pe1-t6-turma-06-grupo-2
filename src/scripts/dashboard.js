@@ -1,67 +1,34 @@
-const students = [
-  {
-    nome: 'João da Silva',
-    matricula: '2023001',
-    plano: 'Básico',
-    vencimento: '12/04',
-    peso: '92kg',
-    altura: '1,84m',
-    telefone: '8692820201',
-    foto: '../assets/user-placeholder.png',
-  },
-  {
-    nome: 'Maria Oliveira',
-    matricula: '2023002',
-    plano: 'Avançado',
-    vencimento: '20/05',
-    peso: '68kg',
-    altura: '1,65m',
-    telefone: '8692820202',
-    foto: '../assets/user-placeholder.png',
-  }
-];
+const usuarioAtual = Auth.getUsuarioAtual();
+if (!usuarioAtual) {
+  window.location.href = 'login.html';
+}
 
 const studentsGrid = document.querySelector('.students-grid');
 const openBtn = document.querySelector('.btn-white');
+const searchInput = document.querySelector('.search-input');
+const logoutBtn = document.querySelector('.logout-btn');
 
-function getAlunos() {
-  let alunos = JSON.parse(localStorage.getItem('alunos'));
-  if (!alunos) {
-    alunos = [
-      {
-        nome: 'João da Silva',
-        matricula: '2023001',
-        plano: 'Básico',
-        vencimento: '12/04',
-        peso: '92kg',
-        altura: '1,84m',
-        telefone: '8692820201',
-        foto: '../assets/user-placeholder.png',
-      },
-      {
-        nome: 'Maria Oliveira',
-        matricula: '2023002',
-        plano: 'Avançado',
-        vencimento: '20/05',
-        peso: '68kg',
-        altura: '1,65m',
-        telefone: '8692820202',
-        foto: '../assets/user-placeholder.png',
-      }
-    ];
-    localStorage.setItem('alunos', JSON.stringify(alunos));
-  }
-  return alunos;
-}
+document.querySelector('.dashboard-title').textContent = usuarioAtual.empresa;
 
 function renderStudents() {
-  const students = getAlunos();
+  const alunos = usuarioAtual.alunos || [];
   studentsGrid.innerHTML = '';
-  students.forEach((aluno, idx) => {
+  
+  if (alunos.length === 0) {
+    studentsGrid.innerHTML = `
+      <div class="no-students">
+        <span class="material-icons">group_off</span>
+        <p>Nenhum aluno cadastrado</p>
+      </div>
+    `;
+    return;
+  }
+
+  alunos.forEach((aluno, idx) => {
     const card = document.createElement('div');
     card.className = 'student-card';
     card.innerHTML = `
-      <img class="student-photo" src="${aluno.foto}" alt="Foto do aluno">
+      <img class="student-photo" src="${aluno.foto || '../assets/user-placeholder.png'}" alt="Foto do aluno">
       <div class="student-info">
         <div class="student-header">
           <span class="student-name">${aluno.nome}</span>
@@ -78,15 +45,37 @@ function renderStudents() {
         </div>
       </div>
     `;
+
     card.querySelector('.delete').addEventListener('click', function() {
-      let alunos = getAlunos();
-      alunos.splice(idx, 1);
-      localStorage.setItem('alunos', JSON.stringify(alunos));
-      renderStudents();
+      if (confirm('Tem certeza que deseja excluir este aluno?')) {
+        usuarioAtual.alunos.splice(idx, 1);
+        Auth.atualizarUsuarioAtual(usuarioAtual);
+        renderStudents();
+      }
     });
+
+    card.querySelector('.edit').addEventListener('click', function() {
+      alert('Funcionalidade em desenvolvimento');
+    });
+
     studentsGrid.appendChild(card);
   });
 }
+
+searchInput.addEventListener('input', function(e) {
+  const searchTerm = e.target.value.toLowerCase();
+  const cards = document.querySelectorAll('.student-card');
+  
+  cards.forEach(card => {
+    const nome = card.querySelector('.student-name').textContent.toLowerCase();
+    card.style.display = nome.includes(searchTerm) ? 'flex' : 'none';
+  });
+});
+
+logoutBtn.addEventListener('click', function() {
+  Auth.logout();
+  window.location.href = 'login.html';
+});
 
 openBtn.addEventListener('click', function() {
   window.location.href = 'cadastro-aluno.html';

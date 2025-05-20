@@ -1,10 +1,17 @@
-document.getElementById('btn-voltar').onclick = function() {
+const usuarioAtual = Auth.getUsuarioAtual();
+if (!usuarioAtual) {
+	window.location.href = 'login.html';
+}
+
+document.getElementById('btn-voltar').addEventListener('click', function() {
 	window.location.href = 'dashboard.html';
-};
-document.getElementById('cadastro-upload-btn').onclick = function() {
+});
+
+document.getElementById('cadastro-upload-btn').addEventListener('click', function() {
 	document.getElementById('cadastro-photo').click();
-};
-document.getElementById('cadastro-photo').onchange = function(e) {
+});
+
+document.getElementById('cadastro-photo').addEventListener('change', function(e) {
 	const file = e.target.files[0];
 	if (file) {
 		const reader = new FileReader();
@@ -13,9 +20,11 @@ document.getElementById('cadastro-photo').onchange = function(e) {
 		};
 		reader.readAsDataURL(file);
 	}
-};
-document.getElementById('cadastroAlunoForm').onsubmit = function(e) {
+});
+
+document.getElementById('cadastroAlunoForm').addEventListener('submit', function(e) {
 	e.preventDefault();
+	
 	const inputs = this.querySelectorAll('input-component');
 	let isValid = true;
 	inputs.forEach(input => {
@@ -30,18 +39,26 @@ document.getElementById('cadastroAlunoForm').onsubmit = function(e) {
 		return;
 	}
 
-	let alunos = JSON.parse(localStorage.getItem('alunos')) || [];
-	const aluno = {
-		nome: document.getElementById('cadastro-nome').shadowRoot.querySelector('input').value.trim(),
-		matricula: document.getElementById('cadastro-matricula').shadowRoot.querySelector('input').value.trim(),
-		plano: document.getElementById('cadastro-plano').shadowRoot.querySelector('input').value.trim(),
-		vencimento: document.getElementById('cadastro-vencimento').shadowRoot.querySelector('input').value.trim(),
-		peso: document.getElementById('cadastro-peso').shadowRoot.querySelector('input').value.trim(),
-		altura: document.getElementById('cadastro-altura').shadowRoot.querySelector('input').value.trim(),
-		telefone: document.getElementById('cadastro-telefone').shadowRoot.querySelector('input').value.trim(),
-		foto: document.getElementById('cadastro-photo-preview').src,
-	};
-	alunos.push(aluno);
-	localStorage.setItem('alunos', JSON.stringify(alunos));
-	window.location.href = 'dashboard.html';
-};
+	try {
+		const aluno = {
+			nome: document.getElementById('cadastro-nome').shadowRoot.querySelector('input').value.trim(),
+			matricula: document.getElementById('cadastro-matricula').shadowRoot.querySelector('input').value.trim(),
+			plano: document.getElementById('cadastro-plano').shadowRoot.querySelector('input').value.trim(),
+			vencimento: document.getElementById('cadastro-vencimento').shadowRoot.querySelector('input').value.trim(),
+			peso: document.getElementById('cadastro-peso').shadowRoot.querySelector('input').value.trim(),
+			altura: document.getElementById('cadastro-altura').shadowRoot.querySelector('input').value.trim(),
+			telefone: document.getElementById('cadastro-telefone').shadowRoot.querySelector('input').value.trim(),
+			foto: document.getElementById('cadastro-photo-preview').src,
+		};
+
+		usuarioAtual.alunos = usuarioAtual.alunos || [];
+		usuarioAtual.alunos.push(aluno);
+		
+		Auth.atualizarUsuarioAtual(usuarioAtual);
+		
+		window.location.replace('dashboard.html');
+	} catch (error) {
+		console.error('Erro ao cadastrar aluno:', error);
+		alert('Ocorreu um erro ao cadastrar o aluno. Por favor, tente novamente.');
+	}
+});

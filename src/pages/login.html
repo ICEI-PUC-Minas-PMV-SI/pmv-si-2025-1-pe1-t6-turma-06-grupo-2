@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="../styles/theme.css">
   <script src="../scripts/InputComponent.js" defer></script>
+  <script src="../scripts/auth.js"></script>
   <link rel="stylesheet" href="../styles/login.css">
 </head>
 <body>
@@ -21,17 +22,36 @@
     </div>
     <div class="login-title">Entrar</div>
     <div class="form-group">
-      <input-component label="Email" type="email" id="email" name="email" placeholder="Type your e-mail" icon="mail_outline" required></input-component>
+      <input-component label="Email" type="email" id="email" name="email" placeholder="Informe seu e-mail" icon="mail_outline" required></input-component>
     </div>
     <div class="form-group">
-      <input-component label="Senha" type="password" id="senha" name="senha" placeholder="Type your password" icon="mail_outline" required></input-component>
+      <input-component label="Senha" type="password" id="senha" name="senha" placeholder="Informe sua senha" icon="lock_outline" required></input-component>
     </div>
     <button class="btn-primary login-btn" type="submit">Login</button>
   </form>
   <script>
+    if (Auth.getUsuarioAtual()) {
+      window.location.replace('dashboard.html');
+    }
     document.getElementById('loginForm').addEventListener('submit', function(e) {
       e.preventDefault();
-      window.location.href = 'dashboard.html';
+      
+      const email = document.getElementById('email').shadowRoot.querySelector('input').value.trim();
+      const senha = document.getElementById('senha').shadowRoot.querySelector('input').value.trim();
+
+      if (!email || !senha) {
+        alert('Por favor, preencha todos os campos.');
+        return;
+      }
+
+      const usuario = Auth.login(email, senha);
+      
+      if (usuario) {
+        window.location.replace('dashboard.html');
+      } else {
+        alert('Email ou senha inválidos!');
+        document.getElementById('senha').shadowRoot.querySelector('input').value = '';
+      }
     });
   </script>
 </body>
