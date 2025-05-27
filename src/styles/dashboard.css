@@ -188,4 +188,15 @@ body {
   .dashboard-title {
     font-size: 1.2rem;
   }
+}
+
+.search-input.filtering-by-plan {
+  border-color: var(--color-primary);
+  background-color: rgba(219, 11, 0, 0.05);
+}
+
+.btn-outline.active {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-color: var(--color-primary);
 } 

@@ -8,7 +8,7 @@ const openBtn = document.querySelector('.btn-white');
 const searchInput = document.querySelector('.search-input');
 const logoutBtn = document.querySelector('.logout-btn');
 
-document.querySelector('.dashboard-title').textContent = usuarioAtual.empresa;
+document.querySelector('.dashboard-title').textContent = 'FitControl - ' + usuarioAtual.empresa;
 
 function renderStudents() {
   const alunos = usuarioAtual.alunos || [];
@@ -55,7 +55,7 @@ function renderStudents() {
     });
 
     card.querySelector('.edit').addEventListener('click', function() {
-      alert('Funcionalidade em desenvolvimento');
+			window.location.href = `cadastro-aluno.html?edit=${idx}`;
     });
 
     studentsGrid.appendChild(card);
