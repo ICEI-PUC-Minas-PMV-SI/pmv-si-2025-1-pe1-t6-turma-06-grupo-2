@@ -36,7 +36,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Caso de Teste** | **CT02 - Cadastro de aluno**
  :--------------: | ------------
 **Procedimento**  | 1) Clique em "Novo" <br> 2) Preencha todos os campos do formulário <br> 3) Clique em "Cadastrar" <br>
-**Requisitos associados** | RF-001
+**Requisitos associados** | RF-01
 **Resultado esperado** | Aluno cadastrado
 **Dados de entrada** | Inserção de dados válidos no formulário de cadastro
 **Resultado obtido** | Sucesso
