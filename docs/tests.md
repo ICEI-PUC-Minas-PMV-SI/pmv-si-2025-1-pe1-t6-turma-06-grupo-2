@@ -27,8 +27,8 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT01 - Criar conta**
  :--------------: | ------------
-**Procedimento**  | 1) Acesse o endereço https://icei-puc-minas-pmv-si.github.io/pmv-si-2025-1-pe1-t6-turma-06-grupo-2/src/pages/index.html <br> 2) Clique em criar conta <br> 2) Preencha todos os campos do formulário <br> 3) Clique no botão "Criar".
-**Requisitos associados** | RF-001
+**Procedimento**  | 1) Acesse o endereço https://icei-puc-minas-pmv-si.github.io/pmv-si-2025-1-pe1-t6-turma-06-grupo-2/src/pages/index.html <br> 2) Clique em criar conta <br> 3) Preencha todos os campos do formulário <br> 4) Clique no botão "Criar".
+**Requisitos associados** | RF-01
 **Resultado esperado** | Prosseguir para a parte 2 do cadastro
 **Dados de entrada** | Inserção de dados válidos no formulário de cadastro
 **Resultado obtido** | Sucesso
