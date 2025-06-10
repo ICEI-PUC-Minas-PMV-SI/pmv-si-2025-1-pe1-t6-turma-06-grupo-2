@@ -25,20 +25,148 @@ Nesta seção o grupo deverá documentar os testes de software que verificam a c
 Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe qual o Requisito Funcional ou não funcional que ele está verificando. Associe também a página (ou artefato) onde o teste será realizado e descreva o cenário do teste. Veja a tabela de exemplo.
 
 
-**Caso de Teste** | **CT01 - Criar conta**
- :--------------: | ------------
-**Procedimento**  | 1) Acesse o endereço https://icei-puc-minas-pmv-si.github.io/pmv-si-2025-1-pe1-t6-turma-06-grupo-2/src/pages/index.html <br> 2) Clique em criar conta <br> 3) Preencha todos os campos do formulário <br> 4) Clique no botão "Criar".
-**Requisitos associados** | RF-01
-**Resultado esperado** | Prosseguir para a parte a página inicial da nova conta
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro
+**Caso de Teste** | **CT01 - Cadastro de novo aluno**
+:--------------: | ------------
+**Procedimento**  | 1) Acesse a página principal do sistema <br> 2) Clique em "Novo Aluno" <br> 3) Preencha os campos obrigatórios (nome, telefone, e-mail) <br> 4) Clique em "Cadastrar"
+**Requisitos associados** | RF-01, RF-10
+**Resultado esperado** | Aluno cadastrado com sucesso e listado na página inicial
+**Dados de entrada** | Nome: João Silva, Telefone: (31) 99999-9999, Email: joao@email.com
 **Resultado obtido** | Sucesso
 
-**Caso de Teste** | **CT02 - Cadastro de aluno**
- :--------------: | ------------
-**Procedimento**  | 1) Clique em "Novo" <br> 2) Preencha todos os campos do formulário <br> 3) Clique em "Cadastrar" <br>
-**Requisitos associados** | RF-01
-**Resultado esperado** | Aluno cadastrado
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro
+**Caso de Teste** | **CT02 - Exclusão de aluno**
+:--------------: | ------------
+**Procedimento**  | 1) Acesse a lista de alunos <br> 2) Selecione um aluno <br> 3) Clique em "Excluir" <br> 4) Confirme a exclusão
+**Requisitos associados** | RF-02
+**Resultado esperado** | Aluno removido da lista
+**Dados de entrada** | Aluno previamente cadastrado
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT03 - Edição de dados do aluno**
+:--------------: | ------------
+**Procedimento**  | 1) Acesse a lista de alunos <br> 2) Clique em "Editar" no aluno desejado <br> 3) Modifique os dados <br> 4) Clique em "Salvar"
+**Requisitos associados** | RF-03
+**Resultado esperado** | Informações atualizadas com sucesso
+**Dados de entrada** | Novo telefone: (31) 98888-8888
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT04 - Busca de aluno**
+:--------------: | ------------
+**Procedimento**  | 1) Acesse a lista de alunos <br> 2) Use a barra de busca para digitar o nome/telefone/e-mail <br> 3) Clique em "Buscar"
+**Requisitos associados** | RF-04
+**Resultado esperado** | Exibição dos resultados correspondentes à busca
+**Dados de entrada** | Nome: João
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT05 - Listar todos os alunos**
+:--------------: | ------------
+**Procedimento**  | 1) Acesse o sistema com login válido <br> 2) Vá até a página de alunos
+**Requisitos associados** | RF-05
+**Resultado esperado** | Listagem completa dos alunos cadastrados
+**Dados de entrada** | Acesso simples à interface
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT06 - Filtro por plano**
+:--------------: | ------------
+**Procedimento**  | 1) Vá até a listagem de alunos <br> 2) Utilize o filtro de plano (mensal, trimestral, anual)
+**Requisitos associados** | RF-06
+**Resultado esperado** | Alunos com o plano selecionado são listados
+**Dados de entrada** | Filtro: Plano mensal
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT07 - Login de usuários**
+:--------------: | ------------
+**Procedimento**  | 1) Acesse a tela de login <br> 2) Digite e-mail e senha válidos <br> 3) Clique em "Entrar"
+**Requisitos associados** | RF-07
+**Resultado esperado** | Redirecionamento para o sistema
+**Dados de entrada** | Email: admin@email.com, Senha: 123456
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT08 - Alteração de senha**
+:--------------: | ------------
+**Procedimento**  | 1) Acesse configurações da conta <br> 2) Clique em "Alterar senha" <br> 3) Digite a nova senha e confirme <br> 4) Salve
+**Requisitos associados** | RF-08
+**Resultado esperado** | Senha alterada com sucesso
+**Dados de entrada** | Nova senha: 654321
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT09 - Mensagens de confirmação**
+:--------------: | ------------
+**Procedimento**  | 1) Execute ações como cadastrar, editar ou excluir aluno
+**Requisitos associados** | RF-09, RNF-08
+**Resultado esperado** | Exibição de mensagens claras de confirmação ou erro
+**Dados de entrada** | Diversos
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT10 - Validação de campos obrigatórios**
+:--------------: | ------------
+**Procedimento**  | 1) Tente cadastrar aluno sem preencher nome ou telefone
+**Requisitos associados** | RF-10
+**Resultado esperado** | Exibição de mensagem de erro indicando os campos obrigatórios
+**Dados de entrada** | Campos vazios
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT11 - Exportação de lista de alunos (CSV)**
+:--------------: | ------------
+**Procedimento**  | 1) Acesse a página de listagem de alunos <br> 2) Clique em "Exportar CSV"
+**Requisitos associados** | RF-11
+**Resultado esperado** | Download do arquivo CSV com os dados
+**Dados de entrada** | Nenhum
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT12 - Impressão da lista de alunos**
+:--------------: | ------------
+**Procedimento**  | 1) Acesse a listagem de alunos <br> 2) Clique em "Imprimir"
+**Requisitos associados** | RF-12
+**Resultado esperado** | Exibição da interface de impressão do navegador
+**Dados de entrada** | Nenhum
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT13 - Responsividade do sistema**
+:--------------: | ------------
+**Procedimento**  | 1) Acesse o sistema em dispositivos móveis e desktops
+**Requisitos associados** | RNF-01
+**Resultado esperado** | Interface adaptada corretamente ao tamanho da tela
+**Dados de entrada** | Diversos dispositivos
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT14 - Compatibilidade com navegadores**
+:--------------: | ------------
+**Procedimento**  | 1) Acesse o sistema nos navegadores Chrome, Firefox, Edge e Safari
+**Requisitos associados** | RNF-02
+**Resultado esperado** | Funcionamento correto em todos os navegadores
+**Dados de entrada** | Acesso via navegador
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT15 - Publicação em ambiente web**
+:--------------: | ------------
+**Procedimento**  | 1) Verifique se o sistema está acessível em ambiente público (GitHub Pages ou outro)
+**Requisitos associados** | RNF-03
+**Resultado esperado** | Sistema disponível publicamente
+**Dados de entrada** | URL do projeto
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT16 - Contraste e acessibilidade**
+:--------------: | ------------
+**Procedimento**  | 1) Verifique se há contraste suficiente entre texto e fundo
+**Requisitos associados** | RNF-04
+**Resultado esperado** | Texto legível e interface acessível
+**Dados de entrada** | Cores da interface
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT17 - Performance com até 500 cadastros**
+:--------------: | ------------
+**Procedimento**  | 1) Cadastre até 500 alunos <br> 2) Meça o tempo de carregamento
+**Requisitos associados** | RNF-05
+**Resultado esperado** | Carregamento inferior a 3 segundos
+**Dados de entrada** | 500 registros
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT18 - Armazenamento LocalStorage**
+:--------------: | ------------
+**Procedimento**  | 1) Cadastrar aluno e recarregar a página <br> 2) Verificar persistência dos dados
+**Requisitos associados** | RNF-06, RNF-07
+**Resultado esperado** | Dados mantidos após o fechamento da aba
+**Dados de entrada** | Cadastro de aluno
 **Resultado obtido** | Sucesso
 
 ## Registro dos Testes de Software
