@@ -173,15 +173,79 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 Esta seção deve apresentar o relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado no plano de testes pré-definido. Documente cada caso de teste apresentando um vídeo ou animação que comprove o funcionamento da funcionalidade. Veja os exemplos a seguir.
 
-|*Caso de Teste*                                 |*CT01 - Criar conta parte 1*                                         |
-|---|---|
-|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
-|Link do vídeo do teste realizado: | https://1drv.ms/u/s!AhD2JqpOUvJChapRtRSQ9vPzbNLwGA?e=mxZs6t| 
+## Registro dos Testes de Software
 
-|*Caso de Teste*                                 |*CT02 - Criar conta parte 2*                                        |
-|---|---|
-|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+Esta seção apresenta o relatório com evidências dos testes de software realizados no sistema pela equipe, baseado no plano de testes pré-definido. Cada caso de teste documenta um vídeo ou animação que comprove o funcionamento da funcionalidade.
+
+| *Caso de Teste* | *CT01 - Criar conta* |
+|-----------------|----------------------|
+| Requisito Associado | RF-01 - O sistema deve permitir o cadastro de novos alunos, incluindo nome, telefone e e-mail |
+| Link do vídeo do teste realizado: | https://1drv.ms/u/s!AhD2JqpOUvJChapRtRSQ9vPzbNLwGA?e=mxZs6t |
+
+| *Caso de Teste* | *CT02 - Cadastro de aluno* |
+|-----------------|---------------------------|
+| Requisito Associado | RF-01 - O sistema deve permitir o cadastro de novos alunos, incluindo nome, telefone e e-mail |
+| Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar |
+
+| *Caso de Teste* | *CT03 - Exclusão de aluno* |
+|-----------------|---------------------------|
+| Requisito Associado | RF-02 - O sistema deve permitir a exclusão de cadastros de alunos que não frequentam mais a academia |
+| Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
+
+| *Caso de Teste* | *CT04 - Edição de dados* |
+|-----------------|---------------------------|
+| Requisito Associado | RF-03 - O sistema deve permitir a edição de informações dos alunos |
+| Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
+
+| *Caso de Teste* | *CT05 - Busca de alunos* |
+|-----------------|---------------------------|
+| Requisito Associado | RF-04 - O sistema deve permitir a busca de alunos por nome, telefone ou e-mail |
+| Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
+
+| *Caso de Teste* | *CT06 - Exibir lista de alunos* |
+|-----------------|---------------------------|
+| Requisito Associado | RF-05 - O sistema deve exibir uma lista de todos os alunos cadastrados |
+| Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
+
+| *Caso de Teste* | *CT07 - Filtragem por plano* |
+|-----------------|---------------------------|
+| Requisito Associado | RF-06 - O sistema deve permitir a filtragem de alunos por plano |
+| Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
+
+| *Caso de Teste* | *CT08 - Login de usuário* |
+|-----------------|---------------------------|
+| Requisito Associado | RF-07 - O sistema deve permitir o login de usuários com senha |
+| Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
+
+| *Caso de Teste* | *CT09 - Alteração de senha* |
+|-----------------|---------------------------|
+| Requisito Associado | RF-08 - O sistema deve permitir a alteração de senha dos usuários |
+| Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
+
+| *Caso de Teste* | *CT10 - Mensagens de confirmação* |
+|-----------------|---------------------------|
+| Requisito Associado | RF-09 - O sistema deve exibir uma mensagem de confirmação ao cadastrar, editar ou excluir um aluno |
+| Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
+
+| *Caso de Teste* | *CT11 - Validação de campos obrigatórios* |
+|-----------------|---------------------------|
+| Requisito Associado | RF-10 - O sistema deve validar campos obrigatórios durante o cadastro |
+| Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
+
+| *Caso de Teste* | *CT12 - Exportação de dados CSV* |
+|-----------------|---------------------------|
+| Requisito Associado | RF-11 - O sistema deve permitir a exportação da lista de alunos para um arquivo CSV |
+| Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
+
+| *Caso de Teste* | *CT13 - Impressão da lista* |
+|-----------------|---------------------------|
+| Requisito Associado | RF-12 - O sistema deve permitir a impressão da lista de alunos |
+| Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
+
+---
+
+Caso deseje, posso atualizar os links conforme os vídeos forem sendo gravados. É só me enviar!
+
 
 
 ## Avaliação dos Testes de Software
