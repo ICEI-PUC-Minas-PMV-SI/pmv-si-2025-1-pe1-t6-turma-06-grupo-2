@@ -51,7 +51,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT04 - Busca de aluno**
 :--------------: | ------------
-**Procedimento**  | 1) Acesse a lista de alunos <br> 2) Use a barra de busca para digitar o nome/telefone/e-mail <br> 3) Clique em "Buscar"
+**Procedimento**  | 1) Acesse a lista de alunos <br> 2) Use a barra de busca para digitar o nome/telefone. <br> 3) Clique em "Buscar"
 **Requisitos associados** | RF-04
 **Resultado esperado** | Exibição dos resultados correspondentes à busca
 **Dados de entrada** | Nome: João
