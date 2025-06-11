@@ -180,27 +180,27 @@ Esta seção apresenta o relatório com evidências dos testes de software reali
 | *Caso de Teste* | *CT01 - Criar conta* |
 |-----------------|----------------------|
 | Requisito Associado | RF-01 - O sistema deve permitir o cadastro de novos alunos, incluindo nome, telefone e e-mail |
-| Link do vídeo do teste realizado: | https://1drv.ms/u/s!AhD2JqpOUvJChapRtRSQ9vPzbNLwGA?e=mxZs6t |
+| Link do vídeo do teste realizado: | https://1drv.ms/v/c/fe358090ac8b669f/ES9GbvDrepNGvquqxsXaJbUBy-wHcFOFTpsX7UnMhWg_Hw?e=XSXcHL |
 
 | *Caso de Teste* | *CT02 - Cadastro de aluno* |
 |-----------------|---------------------------|
 | Requisito Associado | RF-01 - O sistema deve permitir o cadastro de novos alunos, incluindo nome, telefone e e-mail |
-| Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar |
+| Link do vídeo do teste realizado: |https://1drv.ms/v/c/fe358090ac8b669f/EexnRakhQtFPgimIc7M9o9YBG3Fp4hcv1cHIaXwrwN_WNg?e=oVodeC |
 
 | *Caso de Teste* | *CT03 - Exclusão de aluno* |
 |-----------------|---------------------------|
 | Requisito Associado | RF-02 - O sistema deve permitir a exclusão de cadastros de alunos que não frequentam mais a academia |
-| Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
+| Link do vídeo do teste realizado: | [https://1drv.ms/v/c/fe358090ac8b669f/EcNnPtVNlZRJmbHMZRI1KZoBOhTFFXcim4PHc8KPCQctHQ?e=5PCLzH] |
 
 | *Caso de Teste* | *CT04 - Edição de dados* |
 |-----------------|---------------------------|
 | Requisito Associado | RF-03 - O sistema deve permitir a edição de informações dos alunos |
-| Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
+| Link do vídeo do teste realizado: | [https://1drv.ms/v/c/fe358090ac8b669f/EbnyKDPcPW1ImlNd1ExABdcBhGwCLm5AmYMUi0X2H2IIgw?e=YfTbc3] |
 
 | *Caso de Teste* | *CT05 - Busca de alunos* |
 |-----------------|---------------------------|
 | Requisito Associado | RF-04 - O sistema deve permitir a busca de alunos por nome, telefone ou e-mail |
-| Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
+| Link do vídeo do teste realizado: | [https://1drv.ms/v/c/fe358090ac8b669f/EaLo_RtSnrNBsazY_MjVoNcBlNoigH-qloprmcCgB_93tg?e=JquME2] |
 
 | *Caso de Teste* | *CT06 - Exibir lista de alunos* |
 |-----------------|---------------------------|
