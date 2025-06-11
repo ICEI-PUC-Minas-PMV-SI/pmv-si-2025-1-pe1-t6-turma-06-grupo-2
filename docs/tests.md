@@ -200,7 +200,7 @@ Esta seção apresenta o relatório com evidências dos testes de software reali
 | *Caso de Teste* | *CT05 - Busca de alunos* |
 |-----------------|---------------------------|
 | Requisito Associado | RF-04 - O sistema deve permitir a busca de alunos por nome, telefone ou e-mail |
-| Link do vídeo do teste realizado: | [https://1drv.ms/v/c/fe358090ac8b669f/EaLo_RtSnrNBsazY_MjVoNcBlNoigH-qloprmcCgB_93tg?e=JquME2] |
+| Link do vídeo do teste realizado: | [https://1drv.ms/v/c/fe358090ac8b669f/EaLo_RtSnrNBsazY_MjVoNcBlNoigH-qloprmcCgB_93tg?e=HgWBew] |
 
 | *Caso de Teste* | *CT06 - Exibir lista de alunos* |
 |-----------------|---------------------------|
