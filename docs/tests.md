@@ -30,7 +30,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Procedimento**  | 1) Acesse a página principal do sistema <br> 2) Clique em "Novo Aluno" <br> 3) Preencha os campos obrigatórios (nome, telefone, e-mail) <br> 4) Clique em "Cadastrar"
 **Requisitos associados** | RF-01, RF-10
 **Resultado esperado** | Aluno cadastrado com sucesso e listado na página inicial
-**Dados de entrada** | Nome: João Silva, Telefone: (31) 99999-9999, Email: joao@email.com
+**Dados de entrada** | Nome: João Silva, Telefone: (31) 99999-9999.
 **Resultado obtido** | Sucesso
 
 **Caso de Teste** | **CT02 - Exclusão de aluno**
