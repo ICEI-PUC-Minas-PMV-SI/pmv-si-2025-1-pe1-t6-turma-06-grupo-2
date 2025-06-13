@@ -230,7 +230,7 @@ Esta seção apresenta o relatório com evidências dos testes de software reali
 | *Caso de Teste* | *CT11 - Validação de campos obrigatórios* |
 |-----------------|---------------------------|
 | Requisito Associado | RF-10 - O sistema deve validar campos obrigatórios durante o cadastro |
-| Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
+| Link do vídeo do teste realizado: | [[Inserir link do vídeo aqui]](https://sgapucminasbr-my.sharepoint.com/personal/784254_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=Efbc6KDTLFNFhrnhpSbTxX0BY0tHnLYaII1E3w0K67ydbA&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=PRLDFt) |
 
 | *Caso de Teste* | *CT12 - Exportação de dados CSV* |
 |-----------------|---------------------------|
