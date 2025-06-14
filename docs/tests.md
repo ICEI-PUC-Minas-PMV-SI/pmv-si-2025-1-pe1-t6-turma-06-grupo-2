@@ -242,6 +242,31 @@ Esta seção apresenta o relatório com evidências dos testes de software reali
 | Requisito Associado | RF-12 - O sistema deve permitir a impressão da lista de alunos |
 | Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
 
+| *Caso de Teste* | *CT14 - Compatibilidade com navegadores* |
+|-----------------|---------------------------|
+| Requisito Associado | RNF-02 - O sistema deve permitir a impressão da lista de alunos |
+| Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
+
+| *Caso de Teste* | *CT15 - Publicação em ambiente web* |
+|-----------------|---------------------------|
+| Requisito Associado | RF-12 - O sistema deve permitir a impressão da lista de alunos |
+| Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
+
+| *Caso de Teste* | *CT16 - Contraste e acessibilidade* |
+|-----------------|---------------------------|
+| Requisito Associado | RF-12 - O sistema deve permitir a impressão da lista de alunos |
+| Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
+
+| *Caso de Teste* | *CT17 - erformance com até 500 cadastros* |
+|-----------------|---------------------------|
+| Requisito Associado | RF-12 - O sistema deve permitir a impressão da lista de alunos |
+| Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
+
+| *Caso de Teste* | *CT18 - Armazenamento LocalStorage* |
+|-----------------|---------------------------|
+| Requisito Associado | RF-12 - O sistema deve permitir a impressão da lista de alunos |
+| Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
+
 ---
 
 Caso deseje, posso atualizar os links conforme os vídeos forem sendo gravados. É só me enviar!
