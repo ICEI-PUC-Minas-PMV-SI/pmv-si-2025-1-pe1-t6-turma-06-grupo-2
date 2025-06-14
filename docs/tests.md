@@ -242,31 +242,35 @@ Esta seção apresenta o relatório com evidências dos testes de software reali
 | Requisito Associado | RF-12 - O sistema deve permitir a impressão da lista de alunos |
 | Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
 
-| *Caso de Teste* | *CT14 - Compatibilidade com navegadores* |
+| *Caso de Teste* | *CT14 - Responsividade do sistema* |
 |-----------------|---------------------------|
-| Requisito Associado | RNF-02 - O sistema deve permitir a impressão da lista de alunos |
+| Requisito Associado | RNF-02 - O sistema deve ter a interface adaptada corretamente ao tamanho da tela |
 | Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
 
-| *Caso de Teste* | *CT15 - Publicação em ambiente web* |
+| *Caso de Teste* | *CT15 - Compatibilidade com navegadores* |
 |-----------------|---------------------------|
-| Requisito Associado | RF-12 - O sistema deve permitir a impressão da lista de alunos |
+| Requisito Associado | RF-12 - O sistema deve oter um funcionamento correto em todos os navegadores |
 | Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
 
-| *Caso de Teste* | *CT16 - Contraste e acessibilidade* |
+| *Caso de Teste* | *CT16 - Publicação em ambiente web* |
 |-----------------|---------------------------|
-| Requisito Associado | RF-12 - O sistema deve permitir a impressão da lista de alunos |
+| Requisito Associado | RF-12 - O sistema deve estar disponível publicamente |
 | Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
 
-| *Caso de Teste* | *CT17 - erformance com até 500 cadastros* |
+| *Caso de Teste* | *CT17 - Contraste e acessibilidade* |
 |-----------------|---------------------------|
-| Requisito Associado | RF-12 - O sistema deve permitir a impressão da lista de alunos |
+| Requisito Associado | RF-12 - O sistema deve ter oexto legível e interface acessível |
 | Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
 
-| *Caso de Teste* | *CT18 - Armazenamento LocalStorage* |
+| *Caso de Teste* | *CT18 - Performance com até 500 cadastros* |
 |-----------------|---------------------------|
-| Requisito Associado | RF-12 - O sistema deve permitir a impressão da lista de alunos |
+| Requisito Associado | RF-12 - O sistema deve ter carregamento inferior a 3 segundos |
 | Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
 
+| *Caso de Teste* | *CT19 - Armazenamento LocalStorage* |
+|-----------------|---------------------------|
+| Requisito Associado | RF-12 - O sistema deve ter dados mantidos após o fechamento da aba |
+| Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
 ---
 
 Caso deseje, posso atualizar os links conforme os vídeos forem sendo gravados. É só me enviar!
