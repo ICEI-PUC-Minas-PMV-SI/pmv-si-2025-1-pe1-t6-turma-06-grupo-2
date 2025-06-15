@@ -26,7 +26,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT01 - Criação de conta**
 :--------------: | ------------
-**Procedimento**  | 1) Acesse a página inicial do sistema <br> 2) Clique em "Criar conta" <br> 3) Preencha os campos obrigatórios (nome, empresa, e-mail, senha) <br> 4) Clique em "Criar"
+**Procedimento**  | 1) Acesse a página inicial do sistema <br> 2) Clique em "Criar conta" <br> 3) Preencha os campos obrigatórios (nome, empresa, email, senha) <br> 4) Clique em "Criar"
 **Requisitos associados** | 
 **Resultado esperado** | Conta criada com sucesso, e ir para página principal
 **Dados de entrada** | Nome: João Silva, Email emailteste@gmail.com, Empresa: EmpresaTeste, Senha ******
@@ -34,7 +34,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT02 - Cadastro de novo aluno**
 :--------------: | ------------
-**Procedimento**  | 1) Acesse a página principal do sistema <br> 2) Clique em "Novo Aluno" <br> 3) Preencha os campos obrigatórios (nome, telefone, e-mail) <br> 4) Clique em "Cadastrar"
+**Procedimento**  | 1) Acesse a página principal do sistema <br> 2) Clique em "Novo Aluno" <br> 3) Preencha os campos obrigatórios (nome, telefone, ) <br> 4) Clique em "Cadastrar"
 **Requisitos associados** | RF-01, RF-10
 **Resultado esperado** | Aluno cadastrado com sucesso e listado na página inicial
 **Dados de entrada** | Nome: João Silva, Telefone: (31) 99999-9999.
@@ -85,20 +85,14 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Procedimento**  | 1) Acesse a tela de login <br> 2) Digite e-mail e senha válidos <br> 3) Clique em "Entrar"
 **Requisitos associados** | RF-07
 **Resultado esperado** | Redirecionamento para o sistema
-**Dados de entrada** | Email: admin@email.com, Senha: 123456
+**Dados de entrada** | Email: teste@gmail.com, Senha: teste
 **Resultado obtido** | Sucesso
 
-**Caso de Teste** | **CT09 - Alteração de senha**
-:--------------: | ------------
-**Procedimento**  | 1) Acesse configurações da conta <br> 2) Clique em "Alterar senha" <br> 3) Digite a nova senha e confirme <br> 4) Salve
-**Requisitos associados** | RF-08
-**Resultado esperado** | Senha alterada com sucesso
-**Dados de entrada** | Nova senha: 654321
-**Resultado obtido** | Sucesso
 
-**Caso de Teste** | **CT10 - Mensagens de confirmação**
+
+**Caso de Teste** | **CT09 - Mensagem de confirmação**
 :--------------: | ------------
-**Procedimento**  | 1) Execute ações como cadastrar, editar ou excluir aluno
+**Procedimento**  | 1) Execute ação de excluir aluno
 **Requisitos associados** | RF-09, RNF-08
 **Resultado esperado** | Exibição de mensagens claras de confirmação ou erro
 **Dados de entrada** | Diversos
@@ -212,27 +206,24 @@ Esta seção apresenta o relatório com evidências dos testes de software reali
 | *Caso de Teste* | *CT06 - Exibir lista de alunos* |
 |-----------------|---------------------------|
 | Requisito Associado | RF-05 - O sistema deve exibir uma lista de todos os alunos cadastrados |
-| Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
+| Link do vídeo do teste realizado: | [https://1drv.ms/v/c/fe358090ac8b669f/EWf2ZquEegFHonPtCulr0f4BUe2FfzUtxyXtAKwd1ywlKA?e=KBAMlO] |
 
 | *Caso de Teste* | *CT07 - Filtragem por plano* |
 |-----------------|---------------------------|
 | Requisito Associado | RF-06 - O sistema deve permitir a filtragem de alunos por plano |
-| Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
+| Link do vídeo do teste realizado: | [https://1drv.ms/v/c/fe358090ac8b669f/EeWeR0uXUapPsfkGjVoxy-8BlQEtpQyfDn_X1w7H_KR-kg?e=3bHFbO] |
 
 | *Caso de Teste* | *CT08 - Login de usuário* |
 |-----------------|---------------------------|
 | Requisito Associado | RF-07 - O sistema deve permitir o login de usuários com senha |
-| Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
+| Link do vídeo do teste realizado: | [https://1drv.ms/v/c/fe358090ac8b669f/EZvoXNm6dB1AtQvE06PRMUgBq_W72Oznbta3sqtjhIMf8A?e=onCRmH] |
 
-| *Caso de Teste* | *CT09 - Alteração de senha* |
-|-----------------|---------------------------|
-| Requisito Associado | RF-08 - O sistema deve permitir a alteração de senha dos usuários |
-| Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
 
-| *Caso de Teste* | *CT10 - Mensagens de confirmação* |
+
+| *Caso de Teste* | *CT10 - Mensagem de confirmação* |
 |-----------------|---------------------------|
-| Requisito Associado | RF-09 - O sistema deve exibir uma mensagem de confirmação ao cadastrar, editar ou excluir um aluno |
-| Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
+| Requisito Associado | RF-09 - O sistema deve exibir uma mensagem de confirmação ao excluir um aluno |
+| Link do vídeo do teste realizado: | [https://1drv.ms/v/c/fe358090ac8b669f/ETf4B6hvWohNqGYQ6wheEqkBPW2B628uHkbiPXPcPN2dVA?e=ePd5Mi] |
 
 | *Caso de Teste* | *CT11 - Validação de campos obrigatórios* |
 |-----------------|---------------------------|
