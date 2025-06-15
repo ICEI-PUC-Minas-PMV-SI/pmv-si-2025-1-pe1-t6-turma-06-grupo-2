@@ -210,24 +210,24 @@ Esta seção apresenta o relatório com evidências dos testes de software reali
 | *Caso de Teste* | *CT11 - Compatibilidade com navegadores* |
 |-----------------|---------------------------|
 | Requisito Associado | RF-12 - O sistema deve oter um funcionamento correto em todos os navegadores |
-| Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
+| Link do vídeo do teste realizado: | [https://1drv.ms/v/c/fe358090ac8b669f/EX_q0fBOtU1GqISWk_VRzNYBygoSd8Ll_zYdmvNq2JuuWw?e=su1QUk] |
 
 
 
 | *Caso de Teste* | *CT12 - Contraste e acessibilidade* |
 |-----------------|---------------------------|
 | Requisito Associado | RF-12 - O sistema deve ter oexto legível e interface acessível |
-| Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
+| Link do vídeo do teste realizado: | [https://1drv.ms/v/c/fe358090ac8b669f/EeR0oNKBoz1BgmxK2ZV08VIBH_JlgvSHsSGaVmkX2SVy8g?e=SkjRzc] |
 
 | *Caso de Teste* | *CT13 - Performance com vários cadastros* |
 |-----------------|---------------------------|
 | Requisito Associado | RF-12 - O sistema deve ter carregamento inferior a 3 segundos |
-| Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
+| Link do vídeo do teste realizado: | [https://1drv.ms/v/c/fe358090ac8b669f/EXGzrNrhZHlMhuY7XYay59YBPy3zv5Unj455drMgXyr6gg?e=siU1c4] |
 
 | *Caso de Teste* | *CT14 - Armazenamento LocalStorage* |
 |-----------------|---------------------------|
 | Requisito Associado | RF-12 - O sistema deve ter dados mantidos após o fechamento da aba |
-| Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
+| Link do vídeo do teste realizado: | [https://1drv.ms/v/c/fe358090ac8b669f/ESz7ybplHB9OpDS-gVRMnccBAJZpw47awO5J57Er4gQiag?e=OMWPLq] |
 ---
 
 Caso deseje, posso atualizar os links conforme os vídeos forem sendo gravados. É só me enviar!
