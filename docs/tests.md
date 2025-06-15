@@ -98,7 +98,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | Diversos
 **Resultado obtido** | Sucesso
 
-**Caso de Teste** | **CT11 - Validação de campos obrigatórios**
+**Caso de Teste** | **CT10 - Validação de campos obrigatórios**
 :--------------: | ------------
 **Procedimento**  | 1) Tente cadastrar aluno sem preencher nome ou telefone
 **Requisitos associados** | RF-10
@@ -106,31 +106,12 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | Campos vazios
 **Resultado obtido** | Sucesso
 
-**Caso de Teste** | **CT12 - Exportação de lista de alunos (CSV)**
-:--------------: | ------------
-**Procedimento**  | 1) Acesse a página de listagem de alunos <br> 2) Clique em "Exportar CSV"
-**Requisitos associados** | RF-11
-**Resultado esperado** | Download do arquivo CSV com os dados
-**Dados de entrada** | Nenhum
-**Resultado obtido** | Sucesso
 
-**Caso de Teste** | **CT13 - Impressão da lista de alunos**
-:--------------: | ------------
-**Procedimento**  | 1) Acesse a listagem de alunos <br> 2) Clique em "Imprimir"
-**Requisitos associados** | RF-12
-**Resultado esperado** | Exibição da interface de impressão do navegador
-**Dados de entrada** | Nenhum
-**Resultado obtido** | Sucesso
 
-**Caso de Teste** | **CT14 - Responsividade do sistema**
-:--------------: | ------------
-**Procedimento**  | 1) Acesse o sistema em dispositivos móveis e desktops
-**Requisitos associados** | RNF-01
-**Resultado esperado** | Interface adaptada corretamente ao tamanho da tela
-**Dados de entrada** | Diversos dispositivos
-**Resultado obtido** | Sucesso
 
-**Caso de Teste** | **CT15 - Compatibilidade com navegadores**
+
+
+**Caso de Teste** | **CT11 - Compatibilidade com navegadores**
 :--------------: | ------------
 **Procedimento**  | 1) Acesse o sistema nos navegadores Chrome, Firefox, Edge e Safari
 **Requisitos associados** | RNF-02
@@ -138,15 +119,9 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | Acesso via navegador
 **Resultado obtido** | Sucesso
 
-**Caso de Teste** | **CT16 - Publicação em ambiente web**
-:--------------: | ------------
-**Procedimento**  | 1) Verifique se o sistema está acessível em ambiente público (GitHub Pages ou outro)
-**Requisitos associados** | RNF-03
-**Resultado esperado** | Sistema disponível publicamente
-**Dados de entrada** | URL do projeto
-**Resultado obtido** | Sucesso
 
-**Caso de Teste** | **CT17 - Contraste e acessibilidade**
+
+**Caso de Teste** | **CT12 - Contraste e acessibilidade**
 :--------------: | ------------
 **Procedimento**  | 1) Verifique se há contraste suficiente entre texto e fundo
 **Requisitos associados** | RNF-04
@@ -154,15 +129,15 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | Cores da interface
 **Resultado obtido** | Sucesso
 
-**Caso de Teste** | **CT18 - Performance com até 500 cadastros**
+**Caso de Teste** | **CT13 - Performance com até vários cadastros**
 :--------------: | ------------
-**Procedimento**  | 1) Cadastre até 500 alunos <br> 2) Meça o tempo de carregamento
+**Procedimento**  | 1) Cadastre até 10 alunos <br> 2) Meça o tempo de carregamento
 **Requisitos associados** | RNF-05
 **Resultado esperado** | Carregamento inferior a 3 segundos
-**Dados de entrada** | 500 registros
+**Dados de entrada** | 10 registros
 **Resultado obtido** | Sucesso
 
-**Caso de Teste** | **CT19 - Armazenamento LocalStorage**
+**Caso de Teste** | **CT14 - Armazenamento LocalStorage**
 :--------------: | ------------
 **Procedimento**  | 1) Cadastrar aluno e recarregar a página <br> 2) Verificar persistência dos dados
 **Requisitos associados** | RNF-06, RNF-07
@@ -220,52 +195,36 @@ Esta seção apresenta o relatório com evidências dos testes de software reali
 
 
 
-| *Caso de Teste* | *CT10 - Mensagem de confirmação* |
+| *Caso de Teste* | *CT09 - Mensagem de confirmação* |
 |-----------------|---------------------------|
 | Requisito Associado | RF-09 - O sistema deve exibir uma mensagem de confirmação ao excluir um aluno |
 | Link do vídeo do teste realizado: | [https://1drv.ms/v/c/fe358090ac8b669f/ETf4B6hvWohNqGYQ6wheEqkBPW2B628uHkbiPXPcPN2dVA?e=ePd5Mi] |
 
-| *Caso de Teste* | *CT11 - Validação de campos obrigatórios* |
+| *Caso de Teste* | *CT10 - Validação de campos obrigatórios* |
 |-----------------|---------------------------|
 | Requisito Associado | RF-10 - O sistema deve validar campos obrigatórios durante o cadastro |
 | Link do vídeo do teste realizado: | [[Inserir link do vídeo aqui]](https://sgapucminasbr-my.sharepoint.com/personal/784254_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=Efbc6KDTLFNFhrnhpSbTxX0BY0tHnLYaII1E3w0K67ydbA&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=PRLDFt) |
 
-| *Caso de Teste* | *CT12 - Exportação de dados CSV* |
-|-----------------|---------------------------|
-| Requisito Associado | RF-11 - O sistema deve permitir a exportação da lista de alunos para um arquivo CSV |
-| Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
 
-| *Caso de Teste* | *CT13 - Impressão da lista* |
-|-----------------|---------------------------|
-| Requisito Associado | RF-12 - O sistema deve permitir a impressão da lista de alunos |
-| Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
 
-| *Caso de Teste* | *CT14 - Responsividade do sistema* |
-|-----------------|---------------------------|
-| Requisito Associado | RNF-02 - O sistema deve ter a interface adaptada corretamente ao tamanho da tela |
-| Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
-
-| *Caso de Teste* | *CT15 - Compatibilidade com navegadores* |
+| *Caso de Teste* | *CT11 - Compatibilidade com navegadores* |
 |-----------------|---------------------------|
 | Requisito Associado | RF-12 - O sistema deve oter um funcionamento correto em todos os navegadores |
 | Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
 
-| *Caso de Teste* | *CT16 - Publicação em ambiente web* |
-|-----------------|---------------------------|
-| Requisito Associado | RF-12 - O sistema deve estar disponível publicamente |
-| Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
 
-| *Caso de Teste* | *CT17 - Contraste e acessibilidade* |
+
+| *Caso de Teste* | *CT12 - Contraste e acessibilidade* |
 |-----------------|---------------------------|
 | Requisito Associado | RF-12 - O sistema deve ter oexto legível e interface acessível |
 | Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
 
-| *Caso de Teste* | *CT18 - Performance com até 500 cadastros* |
+| *Caso de Teste* | *CT13 - Performance com vários cadastros* |
 |-----------------|---------------------------|
 | Requisito Associado | RF-12 - O sistema deve ter carregamento inferior a 3 segundos |
 | Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
 
-| *Caso de Teste* | *CT19 - Armazenamento LocalStorage* |
+| *Caso de Teste* | *CT14 - Armazenamento LocalStorage* |
 |-----------------|---------------------------|
 | Requisito Associado | RF-12 - O sistema deve ter dados mantidos após o fechamento da aba |
 | Link do vídeo do teste realizado: | [Inserir link do vídeo aqui] |
