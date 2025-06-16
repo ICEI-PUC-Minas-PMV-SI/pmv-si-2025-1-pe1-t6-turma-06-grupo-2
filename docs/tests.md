@@ -145,6 +145,39 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | Cadastro de aluno
 **Resultado obtido** | Sucesso
 
+| *Caso de Teste* | *CT15 - Edição de funcionário* |
+|-----------------|-------------------------------|
+| Procedimento | 1) Acesse a lista de funcionários  <br> 2) Clique em "Editar" no funcionário desejado <br> 3) Modifique os dados (ex.: cargo ou e-mail) <br> 4) Clique em "Salvar" |
+| Requisitos associados | RF-14 |
+| Resultado esperado | Informações do funcionário atualizadas corretamente |
+| Dados de entrada | Novo cargo: Coordenador |
+| Resultado obtido | Sucesso |
+
+| *Caso de Teste* | *CT16 - Exclusão de funcionário* |
+|-----------------|-------------------------------|
+| Procedimento | 1) Acesse a lista de funcionários <br> 2) Selecione um funcionário <br> 3) Clique em "Excluir" <br> 4) Confirme a exclusão |
+| Requisitos associados | RF-15 |
+| Resultado esperado | Funcionário removido da base de dados |
+| Dados de entrada | Funcionário previamente cadastrado |
+| Resultado obtido | Sucesso |
+
+| *Caso de Teste* | *CT17 - Listagem de funcionários* |
+|-----------------|-------------------------------|
+| Procedimento | 1) Acesse a área administrativa <br> 2) Clique em "Funcionários" |
+| Requisitos associados | RF-16 |
+| Resultado esperado | Todos os funcionários cadastrados são exibidos na tela |
+| Dados de entrada | Acesso à área de funcionários |
+| Resultado obtido | Sucesso |
+
+| *Caso de Teste* | *CT18 - Login de funcionário* |
+|-----------------|-------------------------------|
+| Procedimento | 1) Acesse a tela de login <br> 2) Digite o e-mail e senha do funcionário <br> 3) Clique em "Entrar" |
+| Requisitos associados | RF-17 |
+| Resultado esperado | Funcionário autenticado com sucesso e redirecionado para a área interna |
+| Dados de entrada | Email: ana.costa@empresa.com, Senha: 123456 |
+| Resultado obtido | Sucesso |
+
+
 ## Registro dos Testes de Software
 
 Esta seção deve apresentar o relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado no plano de testes pré-definido. Documente cada caso de teste apresentando um vídeo ou animação que comprove o funcionamento da funcionalidade. Veja os exemplos a seguir.
