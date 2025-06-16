@@ -263,7 +263,28 @@ Esta seção apresenta o relatório com evidências dos testes de software reali
 | Link do vídeo do teste realizado: | [https://1drv.ms/v/c/fe358090ac8b669f/ESz7ybplHB9OpDS-gVRMnccBAJZpw47awO5J57Er4gQiag?e=OMWPLq] |
 ---
 
+| *Caso de Teste* | *CT15 - Edição de funcionário* |
+|-----------------|-------------------------------|
+| Requisito Associado | RF-14 - O sistema deve permitir a edição de dados dos funcionários |
+| Link do vídeo do teste realizado: |  |
+
+| *Caso de Teste* | *CT16 - Exclusão de funcionário* |
+|-----------------|-------------------------------|
+| Requisito Associado | RF-15 - O sistema deve permitir a exclusão de registros de funcionários |
+| Link do vídeo do teste realizado: |  |
+
+| *Caso de Teste* | *CT17 - Listagem de funcionários* |
+|-----------------|-------------------------------|
+| Requisito Associado | RF-16 - O sistema deve listar todos os funcionários cadastrados |
+| Link do vídeo do teste realizado: |  |
+
+| *Caso de Teste* | *CT18 - Login de funcionário* |
+|-----------------|-------------------------------|
+| Requisito Associado | RF-17 - O sistema deve permitir o login de funcionários com credenciais válidas |
+| Link do vídeo do teste realizado: |  |
+
 Caso deseje, posso atualizar os links conforme os vídeos forem sendo gravados. É só me enviar!
+
 
 
 
