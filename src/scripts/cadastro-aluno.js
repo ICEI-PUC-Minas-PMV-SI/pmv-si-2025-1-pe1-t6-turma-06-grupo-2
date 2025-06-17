@@ -3,6 +3,45 @@ if (!usuarioAtual) {
   window.location.href = "login.html";
 }
 
+let adminEmpresa = null;
+if (usuarioAtual.tipo === "funcionario") {
+  const usuarios = Auth.getUsuarios();
+  adminEmpresa = usuarios.find(
+    (user) =>
+      user.empresa === usuarioAtual.empresa &&
+      user.funcionarios &&
+      user.funcionarios.some((f) => f.email === usuarioAtual.email)
+  );
+}
+
+let getAlunos = null;
+let setAlunos = null;
+if (window.__DASHBOARD_HELPERS__) {
+  getAlunos = window.__DASHBOARD_HELPERS__.getAlunos;
+  setAlunos = window.__DASHBOARD_HELPERS__.setAlunos;
+} else {
+  getAlunos = function() {
+    if (usuarioAtual.tipo === "funcionario" && adminEmpresa) {
+      return adminEmpresa.alunos || [];
+    }
+    return usuarioAtual.alunos || [];
+  };
+  setAlunos = function(novosAlunos) {
+    if (usuarioAtual.tipo === "funcionario" && adminEmpresa) {
+      adminEmpresa.alunos = novosAlunos;
+      const usuarios = Auth.getUsuarios();
+      const idx = usuarios.findIndex((u) => u.email === adminEmpresa.email);
+      if (idx !== -1) {
+        usuarios[idx] = adminEmpresa;
+        localStorage.setItem("usuarios", JSON.stringify(usuarios));
+      }
+    } else {
+      usuarioAtual.alunos = novosAlunos;
+      Auth.atualizarUsuarioAtual(usuarioAtual);
+    }
+  };
+}
+
 const urlParams = new URLSearchParams(window.location.search);
 const editIndex = urlParams.get("edit");
 let isEditing = editIndex !== null;
@@ -45,7 +84,8 @@ function preencherCampos(aluno) {
 }
 
 if (isEditing) {
-  const aluno = usuarioAtual.alunos[editIndex];
+  const alunos = getAlunos();
+  const aluno = alunos[editIndex];
   if (aluno) {
     setTimeout(() => {
       preencherCampos(aluno);
@@ -129,15 +169,13 @@ document
         foto: document.getElementById("cadastro-photo-preview").src,
       };
 
-      usuarioAtual.alunos = usuarioAtual.alunos || [];
-
+      let alunos = getAlunos();
       if (isEditing) {
-        usuarioAtual.alunos[editIndex] = aluno;
+        alunos[editIndex] = aluno;
       } else {
-        usuarioAtual.alunos.push(aluno);
+        alunos.push(aluno);
       }
-
-      Auth.atualizarUsuarioAtual(usuarioAtual);
+      setAlunos(alunos);
 
       window.location.replace("dashboard.html");
     } catch (error) {

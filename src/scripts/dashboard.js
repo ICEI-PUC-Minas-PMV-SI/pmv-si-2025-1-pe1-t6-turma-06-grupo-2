@@ -3,6 +3,17 @@ if (!usuarioAtual) {
   window.location.href = "login.html";
 }
 
+let adminEmpresa = null;
+if (usuarioAtual.tipo === "funcionario") {
+  const usuarios = Auth.getUsuarios();
+  adminEmpresa = usuarios.find(
+    (user) =>
+      user.empresa === usuarioAtual.empresa &&
+      user.funcionarios &&
+      user.funcionarios.some((f) => f.email === usuarioAtual.email)
+  );
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   const studentsGrid = document.querySelector(".students-grid");
   const openBtn = document.querySelector(".btn-white");
@@ -11,6 +22,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const filterPlanBtn = document.querySelector(
     ".dashboard-actions .btn-outline:nth-child(3)"
   );
+  const exportBtn = document.querySelector(".btn-outline:first-child");
+  const navFuncionarios = document.querySelector('a[href="funcionarios.html"]');
 
   if (
     !studentsGrid ||
@@ -23,15 +36,40 @@ document.addEventListener("DOMContentLoaded", function () {
     return;
   }
 
+  if (usuarioAtual.tipo === "funcionario") {
+    if (navFuncionarios) navFuncionarios.style.display = "none";
+    if (exportBtn) exportBtn.style.display = "none";
+  }
+
   let isFilteringByPlan = false;
 
   document.querySelector(".dashboard-title").textContent =
     "FitControl - " + usuarioAtual.empresa;
 
-  function renderStudents() {
-    const alunos = usuarioAtual.alunos || [];
-    console.log("Alunos:", alunos);
+  function getAlunos() {
+    if (usuarioAtual.tipo === "funcionario" && adminEmpresa) {
+      return adminEmpresa.alunos || [];
+    }
+    return usuarioAtual.alunos || [];
+  }
 
+  function setAlunos(novosAlunos) {
+    if (usuarioAtual.tipo === "funcionario" && adminEmpresa) {
+      adminEmpresa.alunos = novosAlunos;
+      const usuarios = Auth.getUsuarios();
+      const idx = usuarios.findIndex((u) => u.email === adminEmpresa.email);
+      if (idx !== -1) {
+        usuarios[idx] = adminEmpresa;
+        localStorage.setItem("usuarios", JSON.stringify(usuarios));
+      }
+    } else {
+      usuarioAtual.alunos = novosAlunos;
+      Auth.atualizarUsuarioAtual(usuarioAtual);
+    }
+  }
+
+  function renderStudents() {
+    const alunos = getAlunos();
     studentsGrid.innerHTML = "";
 
     if (!alunos || alunos.length === 0) {
@@ -70,8 +108,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
       card.querySelector(".delete").addEventListener("click", function () {
         if (confirm("Tem certeza que deseja excluir este aluno?")) {
-          usuarioAtual.alunos.splice(idx, 1);
-          Auth.atualizarUsuarioAtual(usuarioAtual);
+          const alunosAtualizados = getAlunos();
+          alunosAtualizados.splice(idx, 1);
+          setAlunos(alunosAtualizados);
           renderStudents();
         }
       });
@@ -122,4 +161,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   renderStudents();
+
+  window.__DASHBOARD_HELPERS__ = { getAlunos, setAlunos };
 });

@@ -25,6 +25,8 @@ class Auth {
       usuarios.push({
         ...userData,
         alunos: [],
+        funcionarios: [],
+        tipo: "admin"
       });
 
       console.log("Novo usuário adicionado:", usuarios[usuarios.length - 1]);
@@ -47,7 +49,30 @@ class Auth {
       console.log("Tentando login com email:", email);
       console.log("Usuários disponíveis:", usuarios);
 
-      const usuario = usuarios.find(
+      const funcionario = usuarios.find(
+        (user) =>
+          user &&
+          user.funcionarios &&
+          user.funcionarios.some(
+            (f) =>
+              f.email.toLowerCase() === email.toLowerCase() &&
+              f.senha === senha
+          )
+      );
+
+      if (funcionario) {
+        const funcionarioEncontrado = funcionario.funcionarios.find(
+          (f) => f.email.toLowerCase() === email.toLowerCase()
+        );
+        console.log("Login bem sucedido para funcionário:", funcionarioEncontrado.email);
+        localStorage.setItem("usuarioAtual", JSON.stringify({
+          ...funcionarioEncontrado,
+          empresa: funcionario.empresa
+        }));
+        return funcionarioEncontrado;
+      }
+
+      const admin = usuarios.find(
         (user) =>
           user &&
           user.email &&
@@ -55,10 +80,10 @@ class Auth {
           user.senha === senha
       );
 
-      if (usuario) {
-        console.log("Login bem sucedido para:", usuario.email);
-        localStorage.setItem("usuarioAtual", JSON.stringify(usuario));
-        return usuario;
+      if (admin) {
+        console.log("Login bem sucedido para admin:", admin.email);
+        localStorage.setItem("usuarioAtual", JSON.stringify(admin));
+        return admin;
       }
 
       console.log("Login falhou - usuário não encontrado ou senha incorreta");
@@ -114,17 +139,40 @@ class Auth {
         return;
       }
 
-      const index = usuarios.findIndex(
-        (user) =>
-          user &&
-          user.email &&
-          user.email.toLowerCase() === usuarioAtual.email.toLowerCase()
-      );
+      if (usuarioAtual.tipo === "funcionario") {
+        const admin = usuarios.find(
+          (user) =>
+            user &&
+            user.funcionarios &&
+            user.funcionarios.some(
+              (f) => f.email.toLowerCase() === usuarioAtual.email.toLowerCase()
+            )
+        );
 
-      if (index !== -1) {
-        usuarios[index] = { ...usuarios[index], ...novosDados };
-        localStorage.setItem("usuarios", JSON.stringify(usuarios));
-        localStorage.setItem("usuarioAtual", JSON.stringify(usuarios[index]));
+        if (admin) {
+          const funcionarioIndex = admin.funcionarios.findIndex(
+            (f) => f.email.toLowerCase() === usuarioAtual.email.toLowerCase()
+          );
+
+          if (funcionarioIndex !== -1) {
+            admin.funcionarios[funcionarioIndex] = { ...admin.funcionarios[funcionarioIndex], ...novosDados };
+            localStorage.setItem("usuarios", JSON.stringify(usuarios));
+            localStorage.setItem("usuarioAtual", JSON.stringify(admin.funcionarios[funcionarioIndex]));
+          }
+        }
+      } else {
+        const index = usuarios.findIndex(
+          (user) =>
+            user &&
+            user.email &&
+            user.email.toLowerCase() === usuarioAtual.email.toLowerCase()
+        );
+
+        if (index !== -1) {
+          usuarios[index] = { ...usuarios[index], ...novosDados };
+          localStorage.setItem("usuarios", JSON.stringify(usuarios));
+          localStorage.setItem("usuarioAtual", JSON.stringify(usuarios[index]));
+        }
       }
     } catch (error) {
       console.error("Erro ao atualizar usuário:", error);
