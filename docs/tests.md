@@ -271,7 +271,7 @@ Esta seção apresenta o relatório com evidências dos testes de software reali
 | *Caso de Teste* | *CT16 - Exclusão de funcionário* |
 |-----------------|-------------------------------|
 | Requisito Associado | RF-15 - O sistema deve permitir a exclusão de registros de funcionários |
-| Link do vídeo do teste realizado: |  |
+| Link do vídeo do teste realizado: | https://1drv.ms/v/c/fe358090ac8b669f/ERc9GHIBDbVEhJ4hbXBI9bUB4B4Ceg0h-uhS8ILnXYXJtg?e=R7Xu6F |
 
 | *Caso de Teste* | *CT17 - Listagem de funcionários* |
 |-----------------|-------------------------------|
