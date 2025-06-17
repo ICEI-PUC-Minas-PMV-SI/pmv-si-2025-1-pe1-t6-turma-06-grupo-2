@@ -24,36 +24,268 @@ Nesta seção o grupo deverá documentar os testes de software que verificam a c
 
 Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe qual o Requisito Funcional ou não funcional que ele está verificando. Associe também a página (ou artefato) onde o teste será realizado e descreva o cenário do teste. Veja a tabela de exemplo.
 
-
-**Caso de Teste** | **CT01 - Criar conta parte 1**
- :--------------: | ------------
-**Procedimento**  | 1) Acesse o endereço www.teste.com.br <br> 2) Clique em criar conta <br> 2) Preencha todos os campos do formulário <br> 3) Clique no botão "Continuar".
-**Requisitos associados** | RF-001
-**Resultado esperado** | Prosseguir para a parte 2 do cadastro
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro
+**Caso de Teste** | **CT01 - Criação de conta**
+:--------------: | ------------
+**Procedimento**  | 1) Acesse a página inicial do sistema <br> 2) Clique em "Criar conta" <br> 3) Preencha os campos obrigatórios (nome, empresa, email, senha) <br> 4) Clique em "Criar"
+**Requisitos associados** | 
+**Resultado esperado** | Conta criada com sucesso, e ir para página principal
+**Dados de entrada** | Nome: João Silva, Email emailteste@gmail.com, Empresa: EmpresaTeste, Senha ******
 **Resultado obtido** | Sucesso
 
-**Caso de Teste** | **CT02 - Criar conta parte 2**
- :--------------: | ------------
-**Procedimento**  | 1) Preencha todos os campos do formulário <br> 2) Clique no botão "Criar conta" <br> 
-**Requisitos associados** | RF-001
-**Resultado esperado** | Usuário cadastrado
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro
+**Caso de Teste** | **CT02 - Cadastro de novo aluno**
+:--------------: | ------------
+**Procedimento**  | 1) Acesse a página principal do sistema <br> 2) Clique em "Novo Aluno" <br> 3) Preencha os campos obrigatórios (nome, telefone, ) <br> 4) Clique em "Cadastrar"
+**Requisitos associados** | RF-01, RF-10
+**Resultado esperado** | Aluno cadastrado com sucesso e listado na página inicial
+**Dados de entrada** | Nome: João Silva, Telefone: (31) 99999-9999.
 **Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT03 - Exclusão de aluno**
+:--------------: | ------------
+**Procedimento**  | 1) Acesse a lista de alunos <br> 2) Selecione um aluno <br> 3) Clique em "Excluir" <br> 4) Confirme a exclusão
+**Requisitos associados** | RF-02
+**Resultado esperado** | Aluno removido da lista
+**Dados de entrada** | Aluno previamente cadastrado
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT04 - Edição de dados do aluno**
+:--------------: | ------------
+**Procedimento**  | 1) Acesse a lista de alunos <br> 2) Clique em "Editar" no aluno desejado <br> 3) Modifique os dados <br> 4) Clique em "Salvar"
+**Requisitos associados** | RF-03
+**Resultado esperado** | Informações atualizadas com sucesso
+**Dados de entrada** | Novo telefone: (31) 98888-8888
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT05 - Busca de aluno**
+:--------------: | ------------
+**Procedimento**  | 1) Acesse a lista de alunos <br> 2) Use a barra de busca para digitar o nome/telefone. <br> 3) Clique em "Buscar"
+**Requisitos associados** | RF-04
+**Resultado esperado** | Exibição dos resultados correspondentes à busca
+**Dados de entrada** | Nome: João
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT06 - Listar todos os alunos**
+:--------------: | ------------
+**Procedimento**  | 1) Acesse o sistema com login válido <br> 2) Vá até a página de alunos
+**Requisitos associados** | RF-05
+**Resultado esperado** | Listagem completa dos alunos cadastrados
+**Dados de entrada** | Acesso simples à interface
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT07 - Filtro por plano**
+:--------------: | ------------
+**Procedimento**  | 1) Vá até a listagem de alunos <br> 2) Utilize o filtro de plano (mensal, trimestral, anual)
+**Requisitos associados** | RF-06
+**Resultado esperado** | Alunos com o plano selecionado são listados
+**Dados de entrada** | Filtro: Plano mensal
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT08 - Login de usuários**
+:--------------: | ------------
+**Procedimento**  | 1) Acesse a tela de login <br> 2) Digite e-mail e senha válidos <br> 3) Clique em "Entrar"
+**Requisitos associados** | RF-07
+**Resultado esperado** | Redirecionamento para o sistema
+**Dados de entrada** | Email: teste@gmail.com, Senha: teste
+**Resultado obtido** | Sucesso
+
+
+
+**Caso de Teste** | **CT09 - Mensagem de confirmação**
+:--------------: | ------------
+**Procedimento**  | 1) Execute ação de excluir aluno
+**Requisitos associados** | RF-09, RNF-08
+**Resultado esperado** | Exibição de mensagens claras de confirmação ou erro
+**Dados de entrada** | Diversos
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT10 - Validação de campos obrigatórios**
+:--------------: | ------------
+**Procedimento**  | 1) Tente cadastrar aluno sem preencher nome ou telefone
+**Requisitos associados** | RF-10
+**Resultado esperado** | Exibição de mensagem de erro indicando os campos obrigatórios
+**Dados de entrada** | Campos vazios
+**Resultado obtido** | Sucesso
+
+
+
+
+
+
+**Caso de Teste** | **CT11 - Compatibilidade com navegadores**
+:--------------: | ------------
+**Procedimento**  | 1) Acesse o sistema nos navegadores Chrome, Firefox, Edge e Safari
+**Requisitos associados** | RNF-02
+**Resultado esperado** | Funcionamento correto em todos os navegadores
+**Dados de entrada** | Acesso via navegador
+**Resultado obtido** | Sucesso
+
+
+
+**Caso de Teste** | **CT12 - Contraste e acessibilidade**
+:--------------: | ------------
+**Procedimento**  | 1) Verifique se há contraste suficiente entre texto e fundo
+**Requisitos associados** | RNF-04
+**Resultado esperado** | Texto legível e interface acessível
+**Dados de entrada** | Cores da interface
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT13 - Performance com até vários cadastros**
+:--------------: | ------------
+**Procedimento**  | 1) Cadastre até 10 alunos <br> 2) Meça o tempo de carregamento
+**Requisitos associados** | RNF-05
+**Resultado esperado** | Carregamento inferior a 3 segundos
+**Dados de entrada** | 10 registros
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT14 - Armazenamento LocalStorage**
+:--------------: | ------------
+**Procedimento**  | 1) Cadastrar aluno e recarregar a página <br> 2) Verificar persistência dos dados
+**Requisitos associados** | RNF-06, RNF-07
+**Resultado esperado** | Dados mantidos após o fechamento da aba
+**Dados de entrada** | Cadastro de aluno
+**Resultado obtido** | Sucesso
+
+| *Caso de Teste* | *CT15 - Edição de funcionário* |
+|-----------------|-------------------------------|
+| Procedimento | 1) Acesse a lista de funcionários  <br> 2) Clique em "Editar" no funcionário desejado <br> 3) Modifique os dados (ex.: cargo ou e-mail) <br> 4) Clique em "Salvar" |
+| Requisitos associados | RF-14 |
+| Resultado esperado | Informações do funcionário atualizadas corretamente |
+| Dados de entrada | Novo cargo: Coordenador |
+| Resultado obtido | Sucesso |
+
+| *Caso de Teste* | *CT16 - Exclusão de funcionário* |
+|-----------------|-------------------------------|
+| Procedimento | 1) Acesse a lista de funcionários <br> 2) Selecione um funcionário <br> 3) Clique em "Excluir" <br> 4) Confirme a exclusão |
+| Requisitos associados | RF-15 |
+| Resultado esperado | Funcionário removido da base de dados |
+| Dados de entrada | Funcionário previamente cadastrado |
+| Resultado obtido | Sucesso |
+
+| *Caso de Teste* | *CT17 - Listagem de funcionários* |
+|-----------------|-------------------------------|
+| Procedimento | 1) Acesse a área administrativa <br> 2) Clique em "Funcionários" |
+| Requisitos associados | RF-16 |
+| Resultado esperado | Todos os funcionários cadastrados são exibidos na tela |
+| Dados de entrada | Acesso à área de funcionários |
+| Resultado obtido | Sucesso |
+
+| *Caso de Teste* | *CT18 - Login de funcionário* |
+|-----------------|-------------------------------|
+| Procedimento | 1) Acesse a tela de login <br> 2) Digite o e-mail e senha do funcionário <br> 3) Clique em "Entrar" |
+| Requisitos associados | RF-17 |
+| Resultado esperado | Funcionário autenticado com sucesso e redirecionado para a área interna |
+| Dados de entrada | Email: ana.costa@empresa.com, Senha: 123456 |
+| Resultado obtido | Sucesso |
+
 
 ## Registro dos Testes de Software
 
 Esta seção deve apresentar o relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado no plano de testes pré-definido. Documente cada caso de teste apresentando um vídeo ou animação que comprove o funcionamento da funcionalidade. Veja os exemplos a seguir.
 
-|*Caso de Teste*                                 |*CT01 - Criar conta parte 1*                                         |
-|---|---|
-|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
-|Link do vídeo do teste realizado: | https://1drv.ms/u/s!AhD2JqpOUvJChapRtRSQ9vPzbNLwGA?e=mxZs6t| 
+## Registro dos Testes de Software
 
-|*Caso de Teste*                                 |*CT02 - Criar conta parte 2*                                        |
-|---|---|
-|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+Esta seção apresenta o relatório com evidências dos testes de software realizados no sistema pela equipe, baseado no plano de testes pré-definido. Cada caso de teste documenta um vídeo ou animação que comprove o funcionamento da funcionalidade.
+
+| *Caso de Teste* | *CT01 - Criar conta* |
+|-----------------|----------------------|
+| Requisito Associado | RF-01 - O sistema deve permitir a criação de contas |
+| Link do vídeo do teste realizado: | https://1drv.ms/v/c/fe358090ac8b669f/ES9GbvDrepNGvquqxsXaJbUBy-wHcFOFTpsX7UnMhWg_Hw?e=XSXcHL |
+
+| *Caso de Teste* | *CT02 - Cadastro de aluno* |
+|-----------------|---------------------------|
+| Requisito Associado | RF-01 - O sistema deve permitir o cadastro de novos alunos, incluindo nome, telefone e e-mail |
+| Link do vídeo do teste realizado: |https://1drv.ms/v/c/fe358090ac8b669f/EexnRakhQtFPgimIc7M9o9YBG3Fp4hcv1cHIaXwrwN_WNg?e=oVodeC |
+
+| *Caso de Teste* | *CT03 - Exclusão de aluno* |
+|-----------------|---------------------------|
+| Requisito Associado | RF-02 - O sistema deve permitir a exclusão de cadastros de alunos que não frequentam mais a academia |
+| Link do vídeo do teste realizado: | [https://1drv.ms/v/c/fe358090ac8b669f/EcNnPtVNlZRJmbHMZRI1KZoBOhTFFXcim4PHc8KPCQctHQ?e=5PCLzH] |
+
+| *Caso de Teste* | *CT04 - Edição de dados* |
+|-----------------|---------------------------|
+| Requisito Associado | RF-03 - O sistema deve permitir a edição de informações dos alunos |
+| Link do vídeo do teste realizado: | [https://1drv.ms/v/c/fe358090ac8b669f/EbnyKDPcPW1ImlNd1ExABdcBhGwCLm5AmYMUi0X2H2IIgw?e=YfTbc3] |
+
+| *Caso de Teste* | *CT05 - Busca de alunos* |
+|-----------------|---------------------------|
+| Requisito Associado | RF-04 - O sistema deve permitir a busca de alunos por nome, telefone ou e-mail |
+| Link do vídeo do teste realizado: | [https://1drv.ms/v/c/fe358090ac8b669f/EaLo_RtSnrNBsazY_MjVoNcBlNoigH-qloprmcCgB_93tg?e=HgWBew] |
+
+| *Caso de Teste* | *CT06 - Exibir lista de alunos* |
+|-----------------|---------------------------|
+| Requisito Associado | RF-05 - O sistema deve exibir uma lista de todos os alunos cadastrados |
+| Link do vídeo do teste realizado: | [https://1drv.ms/v/c/fe358090ac8b669f/EWf2ZquEegFHonPtCulr0f4BUe2FfzUtxyXtAKwd1ywlKA?e=KBAMlO] |
+
+| *Caso de Teste* | *CT07 - Filtragem por plano* |
+|-----------------|---------------------------|
+| Requisito Associado | RF-06 - O sistema deve permitir a filtragem de alunos por plano |
+| Link do vídeo do teste realizado: | [https://1drv.ms/v/c/fe358090ac8b669f/EeWeR0uXUapPsfkGjVoxy-8BlQEtpQyfDn_X1w7H_KR-kg?e=3bHFbO] |
+
+| *Caso de Teste* | *CT08 - Login de usuário* |
+|-----------------|---------------------------|
+| Requisito Associado | RF-07 - O sistema deve permitir o login de usuários com senha |
+| Link do vídeo do teste realizado: | [https://1drv.ms/v/c/fe358090ac8b669f/EZvoXNm6dB1AtQvE06PRMUgBq_W72Oznbta3sqtjhIMf8A?e=onCRmH] |
+
+
+
+| *Caso de Teste* | *CT09 - Mensagem de confirmação* |
+|-----------------|---------------------------|
+| Requisito Associado | RF-09 - O sistema deve exibir uma mensagem de confirmação ao excluir um aluno |
+| Link do vídeo do teste realizado: | [https://1drv.ms/v/c/fe358090ac8b669f/ETf4B6hvWohNqGYQ6wheEqkBPW2B628uHkbiPXPcPN2dVA?e=ePd5Mi] |
+
+| *Caso de Teste* | *CT10 - Validação de campos obrigatórios* |
+|-----------------|---------------------------|
+| Requisito Associado | RF-10 - O sistema deve validar campos obrigatórios durante o cadastro |
+| Link do vídeo do teste realizado: | [[Inserir link do vídeo aqui]](https://sgapucminasbr-my.sharepoint.com/personal/784254_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=Efbc6KDTLFNFhrnhpSbTxX0BY0tHnLYaII1E3w0K67ydbA&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=PRLDFt) |
+
+
+
+| *Caso de Teste* | *CT11 - Compatibilidade com navegadores* |
+|-----------------|---------------------------|
+| Requisito Associado | RF-12 - O sistema deve oter um funcionamento correto em todos os navegadores |
+| Link do vídeo do teste realizado: | [https://1drv.ms/v/c/fe358090ac8b669f/EX_q0fBOtU1GqISWk_VRzNYBygoSd8Ll_zYdmvNq2JuuWw?e=su1QUk] |
+
+
+
+| *Caso de Teste* | *CT12 - Contraste e acessibilidade* |
+|-----------------|---------------------------|
+| Requisito Associado | RF-12 - O sistema deve ter oexto legível e interface acessível |
+| Link do vídeo do teste realizado: | [https://1drv.ms/v/c/fe358090ac8b669f/EeR0oNKBoz1BgmxK2ZV08VIBH_JlgvSHsSGaVmkX2SVy8g?e=SkjRzc] |
+
+| *Caso de Teste* | *CT13 - Performance com vários cadastros* |
+|-----------------|---------------------------|
+| Requisito Associado | RF-12 - O sistema deve ter carregamento inferior a 3 segundos |
+| Link do vídeo do teste realizado: | [https://1drv.ms/v/c/fe358090ac8b669f/EXGzrNrhZHlMhuY7XYay59YBPy3zv5Unj455drMgXyr6gg?e=siU1c4] |
+
+| *Caso de Teste* | *CT14 - Armazenamento LocalStorage* |
+|-----------------|---------------------------|
+| Requisito Associado | RF-12 - O sistema deve ter dados mantidos após o fechamento da aba |
+| Link do vídeo do teste realizado: | [https://1drv.ms/v/c/fe358090ac8b669f/ESz7ybplHB9OpDS-gVRMnccBAJZpw47awO5J57Er4gQiag?e=OMWPLq] |
+---
+
+| *Caso de Teste* | *CT15 - Edição de funcionário* |
+|-----------------|-------------------------------|
+| Requisito Associado | RF-14 - O sistema deve permitir a edição de dados dos funcionários |
+| Link do vídeo do teste realizado: |  |
+
+| *Caso de Teste* | *CT16 - Exclusão de funcionário* |
+|-----------------|-------------------------------|
+| Requisito Associado | RF-15 - O sistema deve permitir a exclusão de registros de funcionários |
+| Link do vídeo do teste realizado: |  |
+
+| *Caso de Teste* | *CT17 - Listagem de funcionários* |
+|-----------------|-------------------------------|
+| Requisito Associado | RF-16 - O sistema deve listar todos os funcionários cadastrados |
+| Link do vídeo do teste realizado: |  |
+
+| *Caso de Teste* | *CT18 - Login de funcionário* |
+|-----------------|-------------------------------|
+| Requisito Associado | RF-17 - O sistema deve permitir o login de funcionários com credenciais válidas |
+| Link do vídeo do teste realizado: |  |
+
+Caso deseje, posso atualizar os links conforme os vídeos forem sendo gravados. É só me enviar!
+
+
 
 
 ## Avaliação dos Testes de Software
