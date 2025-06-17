@@ -266,7 +266,7 @@ Esta seção apresenta o relatório com evidências dos testes de software reali
 | *Caso de Teste* | *CT15 - Edição de funcionário* |
 |-----------------|-------------------------------|
 | Requisito Associado | RF-14 - O sistema deve permitir a edição de dados dos funcionários |
-| Link do vídeo do teste realizado: |  |
+| Link do vídeo do teste realizado: | https://1drv.ms/v/c/fe358090ac8b669f/EY45koNyumtFh1JoN7ga2QMBIjnMXBMkEZAJV3s3SPKsxg?e=DckiVb |
 
 | *Caso de Teste* | *CT16 - Exclusão de funcionário* |
 |-----------------|-------------------------------|
