@@ -276,7 +276,7 @@ Esta seção apresenta o relatório com evidências dos testes de software reali
 | *Caso de Teste* | *CT17 - Listagem de funcionários* |
 |-----------------|-------------------------------|
 | Requisito Associado | RF-16 - O sistema deve listar todos os funcionários cadastrados |
-| Link do vídeo do teste realizado: |  |
+| Link do vídeo do teste realizado: |https://1drv.ms/v/c/fe358090ac8b669f/EYb6nm7QH_FMqTw5BIpwunsB-00z24542LjY4JB_htOJMw?e=8sHM7P  |
 
 | *Caso de Teste* | *CT18 - Login de funcionário* |
 |-----------------|-------------------------------|
