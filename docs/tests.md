@@ -283,7 +283,7 @@ Esta seção apresenta o relatório com evidências dos testes de software reali
 | Requisito Associado | RF-17 - O sistema deve permitir o login de funcionários com credenciais válidas |
 | Link do vídeo do teste realizado: | https://1drv.ms/v/c/fe358090ac8b669f/EaDFs08T5bNJn-cf1exdjyEBlzBGwgZsYjGPkW6hQ-NPIg?e=kV8sq0 |
 
-Caso deseje, posso atualizar os links conforme os vídeos forem sendo gravados. É só me enviar!
+
 
 
 
