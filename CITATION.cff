@@ -20,6 +20,8 @@ authors:
     affiliation: PUC Minas
   - given-names: Andersson
     family-names: Henrique Costa Carvalho
+  - given-names: Clóvis
+    family-names: Lemos Tavares
     orcid: 'https://orcid.org/0000-0002-6193-3205'
 repository-code: >-
   https://github.com/ICEI-PUC-Minas-PMV-SI/WebApplicationProject-Template
@@ -32,4 +34,5 @@ keywords:
   - CSS
   - JavaScript
   - Template
-date-released: '2024-06-23'
+  - Gerenciamento de cadastros
+date-released: '2024-06-24'
