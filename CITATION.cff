@@ -18,6 +18,8 @@ authors:
     name-suffix: Prof.
     email: hugo@pucminas.br
     affiliation: PUC Minas
+  - given-names: Andersson
+    family-names: Henrique Costa Carvalho
     orcid: 'https://orcid.org/0000-0002-6193-3205'
 repository-code: >-
   https://github.com/ICEI-PUC-Minas-PMV-SI/WebApplicationProject-Template
