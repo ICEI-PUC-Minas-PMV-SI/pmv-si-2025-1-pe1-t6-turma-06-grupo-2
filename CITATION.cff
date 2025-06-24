@@ -2,19 +2,19 @@
 # Visit https://bit.ly/cffinit to generate yours today!
 
 cff-version: 1.2.0
-title: Web Application Template
+title: FitControl
 message: >-
   Repositório padrão para o Eixo 1 - Projeto 1: Aplicações
   Web da PUC Minas.
 type: software
 authors:
-  - given-names: Aluno 1
-    family-names: Nome Completo
+  - given-names: Eduardo
+    family-names: Pereira Oliveira
     email: aluno@pucminas.br
     affiliation: PUC Minas
-  - given-names: Hugo
+  - given-names: Eric
     name-particle: 'B '
-    family-names: de Paula
+    family-names: Oliveira Vila Real
     name-suffix: Prof.
     email: hugo@pucminas.br
     affiliation: PUC Minas
